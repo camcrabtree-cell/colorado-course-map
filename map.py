@@ -1,7 +1,7 @@
 import os
 import urllib.parse
 import json
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 
 import pandas as pd
 import folium
@@ -16,6 +16,7 @@ from openpyxl import load_workbook
 EXCEL_FILE = "co_courses.xlsx"
 OUTPUT_HTML = "index.html"
 OUTPUT_JSON = "courses.json"
+SCHEMA_VERSION = 2  # bump when structure changes
 
 TYPE_COLORS = {
     "Public": "#2ecc71",
@@ -52,6 +53,7 @@ def is_blank(v) -> bool:
             return True
     except Exception:
         pass
+
     if v is None:
         return True
     if isinstance(v, str) and not v.strip():
@@ -199,7 +201,6 @@ def extract_reel_links_xlsx(path: str, course_col_name="Course", reel_col_name="
         if cell.hyperlink and cell.hyperlink.target:
             url = str(cell.hyperlink.target).strip()
 
-        # fallback: raw URL pasted into the cell
         if not url:
             v = cell.value
             if isinstance(v, str) and v.strip().lower().startswith("http"):
@@ -232,6 +233,11 @@ df = df.dropna(subset=["Lat", "Long"]).copy()
 
 reel_links = extract_reel_links_xlsx(EXCEL_FILE) if has_reel else {}
 
+# Build export metadata
+generated_dt = datetime.now(timezone.utc)
+generated_at = generated_dt.isoformat().replace("+00:00", "Z")
+generated_at_unix = int(generated_dt.timestamp())
+
 
 # ------------------------
 # Build map
@@ -245,7 +251,6 @@ m = folium.Map(
 
 MAP_JS_NAME = m.get_name()
 
-# Type feature groups
 type_groups = {}
 type_group_js = {}
 for t in TYPE_COLORS.keys():
@@ -264,7 +269,6 @@ for _, r in df.iterrows():
     region = clean_text(r["Region"])
     address = clean_text(r["Address"])
 
-    # display vs export values
     first_played_display = fmt_date(r["1st Played"]) if has_first_played else "—"
     first_played_iso = to_iso_date_or_none(r["1st Played"]) if has_first_played else None
     played_by_cam = first_played_iso is not None
@@ -373,7 +377,6 @@ for _, r in df.iterrows():
         {"js": marker.get_name(), "type": ctype, "played": played_by_cam, "video": has_video}
     )
 
-    # CLEAN EXPORT (frontend friendly)
     courses_export.append(
         {
             "id": len(courses_export) + 1,
@@ -401,7 +404,7 @@ for _, r in df.iterrows():
 
 
 # ------------------------
-# Search layer (hidden GeoJSON, NO visible markers)
+# Search layer (hidden GeoJSON)
 # ------------------------
 features = [
     {
@@ -593,7 +596,7 @@ m.get_root().script.add_child(folium.Element(ui_js))
 
 
 # ------------------------
-# Save outputs next to this script (absolute paths so it always works)
+# Save outputs next to this script
 # ------------------------
 base_dir = os.path.dirname(os.path.abspath(__file__))
 out_html_path = os.path.join(base_dir, OUTPUT_HTML)
@@ -601,8 +604,20 @@ out_json_path = os.path.join(base_dir, OUTPUT_JSON)
 
 m.save(out_html_path)
 
+payload = {
+    "meta": {
+        "schema_version": SCHEMA_VERSION,
+        "generated_at": generated_at,
+        "generated_at_unix": generated_at_unix,
+        "count": len(courses_export),
+        "source_file": EXCEL_FILE,
+    },
+    "courses": courses_export,
+}
+
 with open(out_json_path, "w", encoding="utf-8") as f:
-    json.dump(courses_export, f, ensure_ascii=False, indent=2)
+    json.dump(payload, f, ensure_ascii=False, indent=2)
 
 print("Map created!")
 print(f"Exported {len(courses_export)} rows to {out_json_path}")
+print(f"generated_at: {generated_at} ({generated_at_unix})")
