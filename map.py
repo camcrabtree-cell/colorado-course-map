@@ -60,6 +60,7 @@ def is_blank(v) -> bool:
 
 
 def fmt_date(v) -> str:
+    # display only (human friendly)
     try:
         if pd.isna(v):
             return "—"
@@ -93,6 +94,56 @@ def fmt_date(v) -> str:
         return s
 
 
+def to_iso_date_or_none(v):
+    # export only (machine friendly)
+    try:
+        if pd.isna(v):
+            return None
+    except Exception:
+        pass
+
+    if v is None:
+        return None
+
+    if isinstance(v, pd.Timestamp):
+        if pd.isna(v):
+            return None
+        v = v.to_pydatetime()
+
+    if isinstance(v, (datetime, date)):
+        try:
+            return v.strftime("%Y-%m-%d")
+        except Exception:
+            return None
+
+    s = str(v).strip()
+    if not s:
+        return None
+
+    try:
+        parsed = pd.to_datetime(s, errors="coerce")
+        if pd.isna(parsed):
+            return None
+        return parsed.to_pydatetime().strftime("%Y-%m-%d")
+    except Exception:
+        return None
+
+
+def to_int_or_none(v):
+    if is_blank(v):
+        return None
+    try:
+        return int(float(v))
+    except Exception:
+        s = str(v).strip()
+        if not s:
+            return None
+        try:
+            return int(s)
+        except Exception:
+            return None
+
+
 def clean_text(s) -> str:
     if is_blank(s):
         return ""
@@ -116,6 +167,9 @@ def safe_js_str(s: str) -> str:
     )
 
 
+# ------------------------
+# Pull hyperlink targets from Excel for Reel column (pandas often loses them)
+# ------------------------
 def extract_reel_links_xlsx(path: str, course_col_name="Course", reel_col_name="Reel"):
     wb = load_workbook(path, data_only=True)
     ws = wb.active
@@ -145,6 +199,7 @@ def extract_reel_links_xlsx(path: str, course_col_name="Course", reel_col_name="
         if cell.hyperlink and cell.hyperlink.target:
             url = str(cell.hyperlink.target).strip()
 
+        # fallback: raw URL pasted into the cell
         if not url:
             v = cell.value
             if isinstance(v, str) and v.strip().lower().startswith("http"):
@@ -190,6 +245,7 @@ m = folium.Map(
 
 MAP_JS_NAME = m.get_name()
 
+# Type feature groups
 type_groups = {}
 type_group_js = {}
 for t in TYPE_COLORS.keys():
@@ -208,16 +264,13 @@ for _, r in df.iterrows():
     region = clean_text(r["Region"])
     address = clean_text(r["Address"])
 
-    first_played_val = fmt_date(r["1st Played"]) if has_first_played else "—"
-    played_by_cam = first_played_val != "—"
+    # display vs export values
+    first_played_display = fmt_date(r["1st Played"]) if has_first_played else "—"
+    first_played_iso = to_iso_date_or_none(r["1st Played"]) if has_first_played else None
+    played_by_cam = first_played_iso is not None
 
-    order_val = "—"
-    if has_order and not is_blank(r["Order"]):
-        try:
-            order_val = str(int(r["Order"]))
-        except Exception:
-            ov = clean_text(r["Order"])
-            order_val = ov if ov else "—"
+    order_num = to_int_or_none(r["Order"]) if has_order else None
+    order_display = "—" if order_num is None else str(order_num)
 
     reel_url = ""
     if has_reel:
@@ -289,14 +342,14 @@ for _, r in df.iterrows():
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
         <div style="border:1px solid rgba(0,0,0,0.12);border-radius:14px;padding:10px 12px;">
           <div style="font-weight:800;opacity:0.6;margin-bottom:6px;">Course #</div>
-          <div style="font-weight:950;font-size:20px;line-height:1.1;">{order_val}</div>
+          <div style="font-weight:950;font-size:20px;line-height:1.1;">{order_display}</div>
         </div>
 
         <div style="border:1px solid rgba(0,0,0,0.12);border-radius:14px;padding:10px 12px;
                     display:flex;flex-direction:column;gap:8px;">
           <div>
             <div style="font-weight:800;opacity:0.6;margin-bottom:6px;">First Played</div>
-            <div style="font-weight:950;font-size:18px;line-height:1.1;">{first_played_val}</div>
+            <div style="font-weight:950;font-size:18px;line-height:1.1;">{first_played_display}</div>
           </div>
           {video_html}
         </div>
@@ -320,26 +373,36 @@ for _, r in df.iterrows():
         {"js": marker.get_name(), "type": ctype, "played": played_by_cam, "video": has_video}
     )
 
+    # CLEAN EXPORT (frontend friendly)
     courses_export.append(
         {
+            "id": len(courses_export) + 1,
+
             "name": course,
             "city": city,
             "region": region,
             "type": ctype,
             "address": address,
+
             "lat": float(r["Lat"]),
             "lng": float(r["Long"]),
+
             "played": bool(played_by_cam),
-            "first_played": first_played_val,
-            "order": None if order_val == "—" else order_val,
-            "video_url": reel_url,
+            "order": order_num,
+            "first_played": first_played_iso,
+
+            "video_url": reel_url if reel_url else None,
             "has_video": bool(has_video),
+
             "apple_maps": apple_maps,
             "google_maps": google_maps,
         }
     )
 
 
+# ------------------------
+# Search layer (hidden GeoJSON, NO visible markers)
+# ------------------------
 features = [
     {
         "type": "Feature",
@@ -369,6 +432,9 @@ Search(
 ).add_to(m)
 
 
+# ------------------------
+# Filter UI (Played + Video + Type checkboxes)
+# ------------------------
 filter_rows = "\n".join(
     [
         f"""
@@ -525,6 +591,10 @@ document.addEventListener("DOMContentLoaded", function() {{
 m.get_root().html.add_child(folium.Element(ui_html))
 m.get_root().script.add_child(folium.Element(ui_js))
 
+
+# ------------------------
+# Save outputs next to this script (absolute paths so it always works)
+# ------------------------
 base_dir = os.path.dirname(os.path.abspath(__file__))
 out_html_path = os.path.join(base_dir, OUTPUT_HTML)
 out_json_path = os.path.join(base_dir, OUTPUT_JSON)
