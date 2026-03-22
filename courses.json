@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema_version": 2,
-    "generated_at": "2026-03-10T22:56:05.445401Z",
-    "generated_at_unix": 1773183365,
+    "generated_at": "2026-03-22T12:21:26.410413Z",
+    "generated_at_unix": 1774182086,
     "count": 291,
     "source_file": "co_courses.xlsx"
   },
@@ -2020,13 +2020,13 @@
       "region": "Denver Area",
       "type": "Public",
       "address": "4900 Himalaya Road, Denver, CO 80249",
-      "lat": 39.7883,
-      "lng": -104.7427,
+      "lat": 39.786496,
+      "lng": -104.753399,
       "played": true,
       "order": 25,
       "first_played": "2021-06-27",
-      "video_url": null,
-      "has_video": false,
+      "video_url": "https://www.instagram.com/reel/DVyS0XjlGX5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=4900%20Himalaya%20Road%2C%20Denver%2C%20CO%2080249",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4900%20Himalaya%20Road%2C%20Denver%2C%20CO%2080249"
     },
@@ -4082,8 +4082,8 @@
       "played": true,
       "order": 125,
       "first_played": "2026-03-10",
-      "video_url": null,
-      "has_video": false,
+      "video_url": "https://www.instagram.com/reel/DWJaAQYBjbM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=8631%20Frontier%20St%2C%20Firestone%2C%20CO%2080504",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8631%20Frontier%20St%2C%20Firestone%2C%20CO%2080504"
     },
