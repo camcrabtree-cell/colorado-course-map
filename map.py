@@ -16,7 +16,7 @@ from openpyxl import load_workbook
 EXCEL_FILE = "co_courses.xlsx"
 OUTPUT_HTML = "index.html"
 OUTPUT_JSON = "courses.json"
-SCHEMA_VERSION = 2  # bump when structure changes
+SCHEMA_VERSION = 2
 
 TYPE_COLORS = {
     "Public": "#2ecc71",
@@ -304,43 +304,50 @@ for _, r in df.iterrows():
 
     popup_html = f"""
     <div class="ec-sheet-card" style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;">
-      <div class="ec-sheet-handle"></div>
-
-      <div class="ec-sheet-title">{course}</div>
-      <div class="ec-sheet-subtitle">{city} · {region}</div>
-
-      <div class="ec-info-row">
-        <div class="ec-info-label">Type</div>
-        <div class="ec-type-pill">
-          <span class="ec-type-dot" style="background:{color};"></span>
-          <span>{ctype}</span>
-        </div>
-      </div>
-
-      <div class="ec-info-row ec-address-row">
-        <div class="ec-info-label">Address</div>
-        <div class="ec-info-value">{address}</div>
-      </div>
-
-      <div class="ec-btn-row">
-        <a href="{apple_maps}" target="_blank" rel="noopener" class="ec-map-btn">Open in Maps</a>
-        <a href="{google_maps}" target="_blank" rel="noopener" class="ec-map-btn">Google Maps</a>
-      </div>
-
-      <div class="ec-divider"></div>
-
-      <div class="ec-section-title">Cam’s Every Course Journey</div>
-
-      <div class="ec-journey-grid">
-        <div class="ec-journey-card">
-          <div class="ec-journey-label">Course #</div>
-          <div class="ec-journey-value">{order_display}</div>
+      <div class="ec-sheet-scroll">
+        <div class="ec-sheet-topbar">
+          <div class="ec-sheet-grabber"></div>
+          <button class="ec-sheet-toggle" type="button" onclick="window.toggleBottomSheet && window.toggleBottomSheet()">
+            ⌃
+          </button>
         </div>
 
-        <div class="ec-journey-card">
-          <div class="ec-journey-label">First Played</div>
-          <div class="ec-journey-value">{first_played_display}</div>
-          {video_html}
+        <div class="ec-sheet-title">{course}</div>
+        <div class="ec-sheet-subtitle">{city} · {region}</div>
+
+        <div class="ec-info-row">
+          <div class="ec-info-label">Type</div>
+          <div class="ec-type-pill">
+            <span class="ec-type-dot" style="background:{color};"></span>
+            <span>{ctype}</span>
+          </div>
+        </div>
+
+        <div class="ec-info-row ec-address-row">
+          <div class="ec-info-label">Address</div>
+          <div class="ec-info-value">{address}</div>
+        </div>
+
+        <div class="ec-btn-row">
+          <a href="{apple_maps}" target="_blank" rel="noopener" class="ec-map-btn">Open in Maps</a>
+          <a href="{google_maps}" target="_blank" rel="noopener" class="ec-map-btn">Google Maps</a>
+        </div>
+
+        <div class="ec-divider"></div>
+
+        <div class="ec-section-title">Cam’s Every Course Journey</div>
+
+        <div class="ec-journey-grid">
+          <div class="ec-journey-card">
+            <div class="ec-journey-label">Course #</div>
+            <div class="ec-journey-value">{order_display}</div>
+          </div>
+
+          <div class="ec-journey-card">
+            <div class="ec-journey-label">First Played</div>
+            <div class="ec-journey-value">{first_played_display}</div>
+            {video_html}
+          </div>
         </div>
       </div>
     </div>
@@ -359,7 +366,12 @@ for _, r in df.iterrows():
     marker.add_to(type_groups.get(ctype, type_groups["Public"]))
 
     markers_meta.append(
-        {"js": marker.get_name(), "type": ctype, "played": played_by_cam, "video": has_video}
+        {
+            "js": marker.get_name(),
+            "type": ctype,
+            "played": played_by_cam,
+            "video": has_video,
+        }
     )
 
     courses_export.append(
@@ -471,13 +483,44 @@ custom_css = """
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   }
 
-  .ec-sheet-handle {
-    display: none;
-    width: 44px;
+  .ec-sheet-scroll {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+  }
+
+  .ec-sheet-topbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    min-height: 24px;
+  }
+
+  .ec-sheet-grabber {
+    width: 42px;
     height: 5px;
     border-radius: 999px;
     background: rgba(0,0,0,0.16);
-    margin: 0 auto 12px;
+  }
+
+  .ec-sheet-toggle {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    color: rgba(0,0,0,0.65);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
   }
 
   .ec-sheet-title {
@@ -796,7 +839,7 @@ custom_css = """
       pointer-events: none !important;
     }
 
-    /* Bottom sheet course drawer */
+    /* Bottom sheet */
     #ecBottomSheet {
       position: fixed;
       left: 0;
@@ -806,10 +849,11 @@ custom_css = """
       background: white;
       border-radius: 18px 18px 0 0;
       box-shadow: 0 -10px 34px rgba(0,0,0,0.22);
-      transition: bottom 0.24s ease;
-      max-height: 72vh;
-      overflow-y: auto;
-      padding: 14px 14px 18px;
+      transition: bottom 0.24s ease, height 0.22s ease;
+      height: 170px;
+      max-height: 70vh;
+      overflow: hidden;
+      padding: 10px 14px 14px;
       box-sizing: border-box;
     }
 
@@ -817,8 +861,8 @@ custom_css = """
       bottom: 0;
     }
 
-    #ecBottomSheet .ec-sheet-handle {
-      display: block;
+    #ecBottomSheet.expanded {
+      height: 66vh;
     }
 
     #ecBottomSheet .ec-sheet-title {
@@ -876,6 +920,21 @@ custom_css = """
       margin-top: 8px;
       padding: 8px 9px;
       font-size: 14px;
+    }
+
+    /* Collapsed state hides lower content */
+    #ecBottomSheet:not(.expanded) .ec-divider,
+    #ecBottomSheet:not(.expanded) .ec-section-title,
+    #ecBottomSheet:not(.expanded) .ec-journey-grid {
+      display: none;
+    }
+
+    #ecBottomSheet:not(.expanded) .ec-address-row {
+      margin-bottom: 8px;
+    }
+
+    #ecBottomSheet:not(.expanded) .ec-btn-row {
+      margin-top: 8px;
     }
   }
 </style>
@@ -977,6 +1036,8 @@ document.addEventListener("DOMContentLoaded", function() {{
   const playedMobile = document.getElementById("playedOnlyMobile");
   const videoMobile = document.getElementById("videoOnlyMobile");
 
+  let selectedLatLng = null;
+
   function isMobile() {{
     return window.innerWidth <= 768;
   }}
@@ -1064,24 +1125,77 @@ document.addEventListener("DOMContentLoaded", function() {{
 
   function closeMobileFilters() {{
     mobileFilters.classList.remove("show");
-    mobileBackdrop.classList.remove("show");
+    if (!bottomSheet.classList.contains("show")) {{
+      mobileBackdrop.classList.remove("show");
+    }}
   }}
 
-  function openBottomSheet(html) {{
+  function openBottomSheet(html, latlng) {{
     if (!bottomSheet) return;
     bottomSheet.innerHTML = html || "";
+    bottomSheet.classList.remove("expanded");
     bottomSheet.classList.add("show");
+    mobileBackdrop.classList.add("show");
+    selectedLatLng = latlng || null;
+    focusSelectedOnMap(selectedLatLng, false);
+    updateChevron();
   }}
 
   function closeBottomSheet() {{
     if (!bottomSheet) return;
     bottomSheet.classList.remove("show");
+    bottomSheet.classList.remove("expanded");
+    selectedLatLng = null;
+
+    if (!mobileFilters.classList.contains("show")) {{
+      mobileBackdrop.classList.remove("show");
+    }}
+
     setTimeout(() => {{
       if (!bottomSheet.classList.contains("show")) {{
         bottomSheet.innerHTML = "";
       }}
     }}, 220);
   }}
+
+  function updateChevron() {{
+    const btn = bottomSheet?.querySelector(".ec-sheet-toggle");
+    if (!btn) return;
+    btn.textContent = bottomSheet.classList.contains("expanded") ? "⌄" : "⌃";
+  }}
+
+  function focusSelectedOnMap(latlng, expanded = false) {{
+    if (!mapObj || !latlng) return;
+
+    const currentZoom = mapObj.getZoom();
+    const targetZoom = currentZoom < 10 ? 10 : currentZoom;
+
+    mapObj.flyTo(latlng, targetZoom, {{
+      animate: true,
+      duration: 0.35
+    }});
+
+    setTimeout(() => {{
+      const sheetHeight = expanded ? window.innerHeight * 0.66 : 170;
+      const point = mapObj.project(latlng, mapObj.getZoom());
+      const shiftedPoint = point.subtract([0, sheetHeight / 2.2]);
+      mapObj.panTo(mapObj.unproject(shiftedPoint, mapObj.getZoom()), {{
+        animate: true,
+        duration: 0.25
+      }});
+    }}, 380);
+  }}
+
+  window.toggleBottomSheet = function() {{
+    if (!bottomSheet) return;
+    const expanded = bottomSheet.classList.toggle("expanded");
+    updateChevron();
+    if (selectedLatLng) {{
+      setTimeout(() => {{
+        focusSelectedOnMap(selectedLatLng, expanded);
+      }}, 120);
+    }}
+  }};
 
   filterToggle?.addEventListener("click", () => {{
     syncDesktopToMobile();
@@ -1149,7 +1263,7 @@ document.addEventListener("DOMContentLoaded", function() {{
       const contentEl = popupEl.querySelector(".leaflet-popup-content");
       if (!contentEl) return;
 
-      openBottomSheet(contentEl.innerHTML);
+      openBottomSheet(contentEl.innerHTML, e.popup.getLatLng());
 
       setTimeout(() => {{
         try {{
