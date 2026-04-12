@@ -62,7 +62,6 @@ def is_blank(v) -> bool:
 
 
 def fmt_date(v) -> str:
-    # display only (human friendly)
     try:
         if pd.isna(v):
             return "—"
@@ -97,7 +96,6 @@ def fmt_date(v) -> str:
 
 
 def to_iso_date_or_none(v):
-    # export only (machine friendly)
     try:
         if pd.isna(v):
             return None
@@ -170,7 +168,7 @@ def safe_js_str(s: str) -> str:
 
 
 # ------------------------
-# Pull hyperlink targets from Excel for Reel column (pandas often loses them)
+# Pull hyperlink targets from Excel for Reel column
 # ------------------------
 def extract_reel_links_xlsx(path: str, course_col_name="Course", reel_col_name="Reel"):
     wb = load_workbook(path, data_only=True)
@@ -233,7 +231,6 @@ df = df.dropna(subset=["Lat", "Long"]).copy()
 
 reel_links = extract_reel_links_xlsx(EXCEL_FILE) if has_reel else {}
 
-# Build export metadata
 generated_dt = datetime.now(timezone.utc)
 generated_at = generated_dt.isoformat().replace("+00:00", "Z")
 generated_at_unix = int(generated_dt.timestamp())
@@ -287,74 +284,62 @@ for _, r in df.iterrows():
     has_video = bool(reel_url)
 
     apple_maps, google_maps = build_maps_links(address if address else f"{course}, {city}, CO")
+    color = TYPE_COLORS.get(ctype, TYPE_COLORS["Public"])
 
     if has_video:
         video_html = f"""
         <a href="{reel_url}" target="_blank" rel="noopener" style="display:block;text-decoration:none;">
-          <div style="width:100%;padding:9px 10px;border-radius:12px;border:1px solid rgba(0,0,0,0.18);
-                      text-align:center;font-weight:800;color:#0b6aa2;background:white;">IG Reel</div>
+          <div class="ec-video-btn">IG Reel</div>
         </a>
         """
     else:
         if played_by_cam:
             video_html = """
-            <div style="width:100%;padding:9px 10px;border-radius:12px;border:1px solid rgba(0,0,0,0.12);
-                        text-align:center;font-weight:800;color:rgba(0,0,0,0.45);background:rgba(0,0,0,0.03);">No video yet</div>
+            <div class="ec-video-placeholder">No video yet</div>
             """
         else:
             video_html = """
-            <div style="width:100%;padding:9px 10px;border-radius:12px;border:1px solid rgba(0,0,0,0.12);
-                        text-align:center;font-weight:800;color:rgba(0,0,0,0.35);background:rgba(0,0,0,0.02);">Not played yet</div>
+            <div class="ec-video-placeholder ec-video-placeholder-muted">Not played yet</div>
             """
 
-    color = TYPE_COLORS.get(ctype, TYPE_COLORS["Public"])
-
     popup_html = f"""
-    <div style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;">
-      <div style="font-weight:900;font-size:20px;line-height:1.1;margin-bottom:4px;">{course}</div>
-      <div style="font-size:14px;opacity:0.75;margin-bottom:10px;">{city} · {region}</div>
+    <div class="ec-sheet-card" style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;">
+      <div class="ec-sheet-handle"></div>
 
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-        <div style="width:70px;opacity:0.55;">Type</div>
-        <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
-                    background:rgba(0,0,0,0.04);font-weight:800;">
-          <span style="width:10px;height:10px;border-radius:3px;background:{color};display:inline-block;"></span>
+      <div class="ec-sheet-title">{course}</div>
+      <div class="ec-sheet-subtitle">{city} · {region}</div>
+
+      <div class="ec-info-row">
+        <div class="ec-info-label">Type</div>
+        <div class="ec-type-pill">
+          <span class="ec-type-dot" style="background:{color};"></span>
           <span>{ctype}</span>
         </div>
       </div>
 
-      <div style="display:flex;gap:10px;margin-bottom:10px;">
-        <div style="width:70px;opacity:0.55;">Address</div>
-        <div style="flex:1;font-weight:650;">{address}</div>
+      <div class="ec-info-row ec-address-row">
+        <div class="ec-info-label">Address</div>
+        <div class="ec-info-value">{address}</div>
       </div>
 
-      <div style="display:flex;gap:10px;margin:10px 0 6px 0;">
-        <a href="{apple_maps}" target="_blank" rel="noopener" style="flex:1;text-decoration:none;">
-          <div style="padding:10px 12px;border-radius:14px;border:1px solid rgba(0,0,0,0.18);
-                      text-align:center;font-weight:900;color:#0b6aa2;background:white;">Open in Maps</div>
-        </a>
-        <a href="{google_maps}" target="_blank" rel="noopener" style="flex:1;text-decoration:none;">
-          <div style="padding:10px 12px;border-radius:14px;border:1px solid rgba(0,0,0,0.18);
-                      text-align:center;font-weight:900;color:#0b6aa2;background:white;">Google Maps</div>
-        </a>
+      <div class="ec-btn-row">
+        <a href="{apple_maps}" target="_blank" rel="noopener" class="ec-map-btn">Open in Maps</a>
+        <a href="{google_maps}" target="_blank" rel="noopener" class="ec-map-btn">Google Maps</a>
       </div>
 
-      <div style="height:1px;background:rgba(0,0,0,0.12);margin:12px 0;"></div>
+      <div class="ec-divider"></div>
 
-      <div style="font-weight:900;font-size:18px;margin-bottom:8px;">Cam’s Every Course Journey</div>
+      <div class="ec-section-title">Cam’s Every Course Journey</div>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-        <div style="border:1px solid rgba(0,0,0,0.12);border-radius:14px;padding:10px 12px;">
-          <div style="font-weight:800;opacity:0.6;margin-bottom:6px;">Course #</div>
-          <div style="font-weight:950;font-size:20px;line-height:1.1;">{order_display}</div>
+      <div class="ec-journey-grid">
+        <div class="ec-journey-card">
+          <div class="ec-journey-label">Course #</div>
+          <div class="ec-journey-value">{order_display}</div>
         </div>
 
-        <div style="border:1px solid rgba(0,0,0,0.12);border-radius:14px;padding:10px 12px;
-                    display:flex;flex-direction:column;gap:8px;">
-          <div>
-            <div style="font-weight:800;opacity:0.6;margin-bottom:6px;">First Played</div>
-            <div style="font-weight:950;font-size:18px;line-height:1.1;">{first_played_display}</div>
-          </div>
+        <div class="ec-journey-card">
+          <div class="ec-journey-label">First Played</div>
+          <div class="ec-journey-value">{first_played_display}</div>
           {video_html}
         </div>
       </div>
@@ -369,7 +354,7 @@ for _, r in df.iterrows():
         fill=True,
         fill_color=color,
         fill_opacity=0.9,
-        popup=folium.Popup(popup_html, max_width=380),
+        popup=folium.Popup(popup_html, max_width=420),
     )
     marker.add_to(type_groups.get(ctype, type_groups["Public"]))
 
@@ -431,14 +416,14 @@ Search(
 
 
 # ------------------------
-# Filter UI (Played + Video + Type checkboxes)
+# Filter UI
 # ------------------------
 filter_rows = "\n".join(
     [
         f"""
-        <label style="display:flex;align-items:center;gap:10px;margin:7px 0;cursor:pointer;">
+        <label class="ec-filter-option">
           <input type="checkbox" class="type-toggle" data-layer="{t}" checked>
-          <span style="width:14px;height:14px;background:{TYPE_COLORS[t]};display:inline-block;border:1px solid rgba(0,0,0,0.25);"></span>
+          <span class="ec-filter-color" style="background:{TYPE_COLORS[t]};"></span>
           <span>{t}</span>
         </label>
         """
@@ -448,19 +433,29 @@ filter_rows = "\n".join(
 
 custom_css = """
 <style>
+  /* Search */
   .leaflet-control-search {
-    z-index: 9999 !important;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
+    z-index: 9997 !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10) !important;
     border-radius: 12px !important;
-    background: rgba(255,255,255,0.92) !important;
-    border: 1px solid rgba(0,0,0,0.18) !important;
+    background: rgba(255,255,255,0.96) !important;
+    border: 1px solid rgba(0,0,0,0.12) !important;
   }
 
   .leaflet-control-search .search-input {
-    width: 230px !important;
-    border-radius: 12px !important;
+    width: 220px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
+  .leaflet-control-search .search-button {
+    height: 36px !important;
+  }
+
+  /* Desktop popup tweaks */
   .leaflet-popup-content-wrapper {
     border-radius: 18px !important;
   }
@@ -471,23 +466,416 @@ custom_css = """
     max-width: min(86vw, 420px) !important;
   }
 
+  /* Shared card styling */
+  .ec-sheet-card {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  .ec-sheet-handle {
+    display: none;
+    width: 44px;
+    height: 5px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.16);
+    margin: 0 auto 12px;
+  }
+
+  .ec-sheet-title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.08;
+    margin-bottom: 4px;
+  }
+
+  .ec-sheet-subtitle {
+    font-size: 14px;
+    opacity: 0.74;
+    margin-bottom: 10px;
+  }
+
+  .ec-info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .ec-address-row {
+    margin-bottom: 10px;
+  }
+
+  .ec-info-label {
+    width: 68px;
+    opacity: 0.55;
+    flex: 0 0 68px;
+  }
+
+  .ec-info-value {
+    flex: 1;
+    font-weight: 650;
+    line-height: 1.35;
+  }
+
+  .ec-type-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.04);
+    font-weight: 800;
+  }
+
+  .ec-type-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  .ec-btn-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 6px 0;
+  }
+
+  .ec-map-btn {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 14px;
+    border: 1px solid rgba(0,0,0,0.16);
+    text-align: center;
+    font-weight: 900;
+    color: #0b6aa2;
+    background: white;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .ec-divider {
+    height: 1px;
+    background: rgba(0,0,0,0.12);
+    margin: 12px 0;
+  }
+
+  .ec-section-title {
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .ec-journey-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .ec-journey-card {
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 14px;
+    padding: 10px 12px;
+  }
+
+  .ec-journey-label {
+    font-weight: 800;
+    opacity: 0.6;
+    margin-bottom: 6px;
+  }
+
+  .ec-journey-value {
+    font-weight: 950;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .ec-video-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 9px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.18);
+    text-align: center;
+    font-weight: 800;
+    color: #0b6aa2;
+    background: white;
+    box-sizing: border-box;
+  }
+
+  .ec-video-placeholder {
+    width: 100%;
+    margin-top: 10px;
+    padding: 9px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.12);
+    text-align: center;
+    font-weight: 800;
+    color: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.03);
+    box-sizing: border-box;
+  }
+
+  .ec-video-placeholder-muted {
+    color: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.02);
+  }
+
+  /* Desktop filter box */
+  .ec-filter-panel {
+    position: fixed;
+    bottom: 24px;
+    right: 18px;
+    z-index: 9998;
+    background: rgba(255,255,255,0.94);
+    border: 1px solid rgba(0,0,0,0.16);
+    border-radius: 14px;
+    padding: 12px 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;
+    font-size: 13px;
+    width: 230px;
+  }
+
+  .ec-filter-title {
+    font-weight: 900;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .ec-filter-top {
+    margin-bottom: 10px;
+  }
+
+  .ec-filter-top label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 7px 0;
+    cursor: pointer;
+    font-weight: 800;
+  }
+
+  .ec-filter-divider {
+    height: 1px;
+    background: rgba(0,0,0,0.12);
+    margin: 10px 0;
+  }
+
+  .ec-filter-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 7px 0;
+    cursor: pointer;
+  }
+
+  .ec-filter-color {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.25);
+  }
+
+  .ec-filter-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .ec-filter-actions button {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.18);
+    background: white;
+    cursor: pointer;
+  }
+
+  /* Mobile-only controls */
+  .ec-filter-toggle {
+    display: none;
+  }
+
+  .ec-mobile-sheet {
+    display: none;
+  }
+
+  .ec-mobile-backdrop {
+    display: none;
+  }
+
+  /* Mobile overhaul */
   @media (max-width: 768px) {
-    .leaflet-popup-content {
-      width: min(84vw, 340px) !important;
-      max-width: min(84vw, 340px) !important;
-      max-height: 58vh !important;
-      overflow-y: auto !important;
-      overflow-x: hidden !important;
-      -webkit-overflow-scrolling: touch;
+    .leaflet-control-search {
+      top: 10px !important;
+      margin-top: 0 !important;
     }
 
-    .leaflet-popup-content-wrapper {
-      max-height: 62vh !important;
-      overflow: hidden !important;
+    .leaflet-control-search .search-input {
+      width: 190px !important;
+      height: 34px !important;
+      font-size: 13px !important;
     }
 
-    .leaflet-popup-tip-container {
-      margin-top: -1px;
+    .ec-filter-panel {
+      display: none;
+    }
+
+    .ec-filter-toggle {
+      display: inline-flex;
+      position: fixed;
+      right: 14px;
+      bottom: 18px;
+      z-index: 10002;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.14);
+      background: rgba(255,255,255,0.96);
+      padding: 11px 16px;
+      font-weight: 900;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .ec-mobile-backdrop.show {
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.26);
+      z-index: 10000;
+    }
+
+    .ec-mobile-sheet {
+      display: block;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: -100%;
+      z-index: 10001;
+      background: white;
+      border-radius: 18px 18px 0 0;
+      box-shadow: 0 -8px 30px rgba(0,0,0,0.18);
+      padding: 14px 16px 18px;
+      transition: bottom 0.22s ease;
+      max-height: 74vh;
+      overflow-y: auto;
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;
+    }
+
+    .ec-mobile-sheet.show {
+      bottom: 0;
+    }
+
+    .ec-mobile-sheet-handle {
+      width: 44px;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.16);
+      margin: 0 auto 12px;
+    }
+
+    .ec-mobile-sheet-title {
+      font-weight: 900;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .ec-mobile-sheet .ec-filter-top label,
+    .ec-mobile-sheet .ec-filter-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    /* Hide default popup visuals on mobile */
+    .leaflet-popup {
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    /* Bottom sheet course drawer */
+    #ecBottomSheet {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: -100%;
+      z-index: 10003;
+      background: white;
+      border-radius: 18px 18px 0 0;
+      box-shadow: 0 -10px 34px rgba(0,0,0,0.22);
+      transition: bottom 0.24s ease;
+      max-height: 72vh;
+      overflow-y: auto;
+      padding: 14px 14px 18px;
+      box-sizing: border-box;
+    }
+
+    #ecBottomSheet.show {
+      bottom: 0;
+    }
+
+    #ecBottomSheet .ec-sheet-handle {
+      display: block;
+    }
+
+    #ecBottomSheet .ec-sheet-title {
+      font-size: 18px;
+    }
+
+    #ecBottomSheet .ec-sheet-subtitle {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    #ecBottomSheet .ec-info-label {
+      width: 58px;
+      flex: 0 0 58px;
+      font-size: 13px;
+    }
+
+    #ecBottomSheet .ec-info-value {
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    #ecBottomSheet .ec-btn-row {
+      gap: 8px;
+    }
+
+    #ecBottomSheet .ec-map-btn {
+      padding: 9px 10px;
+      font-size: 14px;
+    }
+
+    #ecBottomSheet .ec-section-title {
+      font-size: 16px;
+    }
+
+    #ecBottomSheet .ec-journey-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    #ecBottomSheet .ec-journey-card {
+      padding: 10px;
+    }
+
+    #ecBottomSheet .ec-journey-label {
+      font-size: 12px;
+    }
+
+    #ecBottomSheet .ec-journey-value {
+      font-size: 18px;
+    }
+
+    #ecBottomSheet .ec-video-btn,
+    #ecBottomSheet .ec-video-placeholder {
+      margin-top: 8px;
+      padding: 8px 9px;
+      font-size: 14px;
     }
   }
 </style>
@@ -496,40 +884,62 @@ custom_css = """
 ui_html = f"""
 {custom_css}
 
-<div style="
-  position:fixed; bottom:24px; right:18px; z-index:9998;
-  background:rgba(255,255,255,0.92);
-  border:1px solid rgba(0,0,0,0.2);
-  border-radius:12px;
-  padding:12px 14px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.12);
-  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;
-  font-size:13px;
-  width:230px;
-">
-  <div style="font-weight:900;font-size:14px;margin-bottom:8px;">Course Filters</div>
+<div class="ec-filter-panel" id="ecDesktopFilters">
+  <div class="ec-filter-title">Course Filters</div>
 
-  <div style="margin-bottom:10px;">
-    <label style="display:flex;align-items:center;gap:10px;margin:7px 0;cursor:pointer;">
+  <div class="ec-filter-top">
+    <label>
       <input id="playedOnly" type="checkbox">
-      <span style="font-weight:800;">Played by Cam</span>
+      <span>Played by Cam</span>
     </label>
 
-    <label style="display:flex;align-items:center;gap:10px;margin:7px 0;cursor:pointer;">
+    <label>
       <input id="videoOnly" type="checkbox">
-      <span style="font-weight:800;">Has video review</span>
+      <span>Has video review</span>
     </label>
   </div>
 
-  <div style="height:1px;background:rgba(0,0,0,0.12);margin:10px 0;"></div>
+  <div class="ec-filter-divider"></div>
 
   {filter_rows}
 
-  <div style="display:flex;gap:10px;margin-top:10px;">
-    <button id="filterAll" style="flex:1;padding:8px 10px;border-radius:10px;border:1px solid rgba(0,0,0,0.2);background:white;cursor:pointer;">All</button>
-    <button id="filterNone" style="flex:1;padding:8px 10px;border-radius:10px;border:1px solid rgba(0,0,0,0.2);background:white;cursor:pointer;">None</button>
+  <div class="ec-filter-actions">
+    <button id="filterAll">All</button>
+    <button id="filterNone">None</button>
   </div>
 </div>
+
+<button class="ec-filter-toggle" id="ecFilterToggle">Filters</button>
+
+<div class="ec-mobile-backdrop" id="ecMobileBackdrop"></div>
+
+<div class="ec-mobile-sheet" id="ecMobileFilters">
+  <div class="ec-mobile-sheet-handle"></div>
+  <div class="ec-mobile-sheet-title">Course Filters</div>
+
+  <div class="ec-filter-top">
+    <label>
+      <input id="playedOnlyMobile" type="checkbox">
+      <span>Played by Cam</span>
+    </label>
+
+    <label>
+      <input id="videoOnlyMobile" type="checkbox">
+      <span>Has video review</span>
+    </label>
+  </div>
+
+  <div class="ec-filter-divider"></div>
+
+  {filter_rows.replace('class="type-toggle"', 'class="type-toggle-mobile"')}
+
+  <div class="ec-filter-actions">
+    <button id="filterAllMobile">All</button>
+    <button id="filterNoneMobile">None</button>
+  </div>
+</div>
+
+<div id="ecBottomSheet"></div>
 """
 
 type_layers_js = ",\n".join([f'"{t}": window["{type_group_js[t]}"]' for t in TYPE_COLORS.keys()])
@@ -557,18 +967,68 @@ document.addEventListener("DOMContentLoaded", function() {{
     {markers_js_list}
   ];
 
+  const bottomSheet = document.getElementById("ecBottomSheet");
+  const filterToggle = document.getElementById("ecFilterToggle");
+  const mobileFilters = document.getElementById("ecMobileFilters");
+  const mobileBackdrop = document.getElementById("ecMobileBackdrop");
+
+  const playedDesktop = document.getElementById("playedOnly");
+  const videoDesktop = document.getElementById("videoOnly");
+  const playedMobile = document.getElementById("playedOnlyMobile");
+  const videoMobile = document.getElementById("videoOnlyMobile");
+
+  function isMobile() {{
+    return window.innerWidth <= 768;
+  }}
+
+  function syncDesktopToMobile() {{
+    if (playedMobile) playedMobile.checked = !!playedDesktop?.checked;
+    if (videoMobile) videoMobile.checked = !!videoDesktop?.checked;
+
+    const desktopToggles = Array.from(document.querySelectorAll(".type-toggle"));
+    const mobileToggles = Array.from(document.querySelectorAll(".type-toggle-mobile"));
+
+    mobileToggles.forEach((cb, idx) => {{
+      if (desktopToggles[idx]) cb.checked = desktopToggles[idx].checked;
+    }});
+  }}
+
+  function syncMobileToDesktop() {{
+    if (playedDesktop) playedDesktop.checked = !!playedMobile?.checked;
+    if (videoDesktop) videoDesktop.checked = !!videoMobile?.checked;
+
+    const desktopToggles = Array.from(document.querySelectorAll(".type-toggle"));
+    const mobileToggles = Array.from(document.querySelectorAll(".type-toggle-mobile"));
+
+    desktopToggles.forEach((cb, idx) => {{
+      if (mobileToggles[idx]) cb.checked = mobileToggles[idx].checked;
+    }});
+  }}
+
   function getTypeState() {{
     const state = {{}};
-    document.querySelectorAll(".type-toggle").forEach(cb => {{
+    const toggles = isMobile()
+      ? document.querySelectorAll(".type-toggle-mobile")
+      : document.querySelectorAll(".type-toggle");
+
+    toggles.forEach(cb => {{
       state[cb.dataset.layer] = cb.checked;
     }});
     return state;
   }}
 
+  function getPlayedOnly() {{
+    return isMobile() ? !!playedMobile?.checked : !!playedDesktop?.checked;
+  }}
+
+  function getVideoOnly() {{
+    return isMobile() ? !!videoMobile?.checked : !!videoDesktop?.checked;
+  }}
+
   function applyFilters() {{
     const typeState = getTypeState();
-    const playedOnly = !!document.getElementById("playedOnly")?.checked;
-    const videoOnly = !!document.getElementById("videoOnly")?.checked;
+    const playedOnly = getPlayedOnly();
+    const videoOnly = getVideoOnly();
 
     Object.keys(typeLayers).forEach(t => {{
       const g = typeLayers[t];
@@ -585,9 +1045,7 @@ document.addEventListener("DOMContentLoaded", function() {{
     markers.forEach(obj => {{
       if (!obj.m) return;
 
-      const wantType = !!typeState[obj.type];
-      let ok = wantType;
-
+      let ok = !!typeState[obj.type];
       if (playedOnly) ok = ok && obj.played;
       if (videoOnly) ok = ok && obj.video;
 
@@ -599,9 +1057,41 @@ document.addEventListener("DOMContentLoaded", function() {{
     }});
   }}
 
-  document.querySelectorAll(".type-toggle").forEach(cb => cb.addEventListener("change", applyFilters));
-  document.getElementById("playedOnly")?.addEventListener("change", applyFilters);
-  document.getElementById("videoOnly")?.addEventListener("change", applyFilters);
+  function openMobileFilters() {{
+    mobileFilters.classList.add("show");
+    mobileBackdrop.classList.add("show");
+  }}
+
+  function closeMobileFilters() {{
+    mobileFilters.classList.remove("show");
+    mobileBackdrop.classList.remove("show");
+  }}
+
+  function openBottomSheet(html) {{
+    if (!bottomSheet) return;
+    bottomSheet.innerHTML = html || "";
+    bottomSheet.classList.add("show");
+  }}
+
+  function closeBottomSheet() {{
+    if (!bottomSheet) return;
+    bottomSheet.classList.remove("show");
+    setTimeout(() => {{
+      if (!bottomSheet.classList.contains("show")) {{
+        bottomSheet.innerHTML = "";
+      }}
+    }}, 220);
+  }}
+
+  filterToggle?.addEventListener("click", () => {{
+    syncDesktopToMobile();
+    openMobileFilters();
+  }});
+
+  mobileBackdrop?.addEventListener("click", () => {{
+    closeMobileFilters();
+    closeBottomSheet();
+  }});
 
   document.getElementById("filterAll")?.addEventListener("click", () => {{
     document.querySelectorAll(".type-toggle").forEach(cb => cb.checked = true);
@@ -613,31 +1103,77 @@ document.addEventListener("DOMContentLoaded", function() {{
     applyFilters();
   }});
 
-  function isMobile() {{
-    return window.innerWidth <= 768;
-  }}
+  document.getElementById("filterAllMobile")?.addEventListener("click", () => {{
+    document.querySelectorAll(".type-toggle-mobile").forEach(cb => cb.checked = true);
+    syncMobileToDesktop();
+    applyFilters();
+  }});
+
+  document.getElementById("filterNoneMobile")?.addEventListener("click", () => {{
+    document.querySelectorAll(".type-toggle-mobile").forEach(cb => cb.checked = false);
+    syncMobileToDesktop();
+    applyFilters();
+  }});
+
+  playedDesktop?.addEventListener("change", applyFilters);
+  videoDesktop?.addEventListener("change", applyFilters);
+
+  playedMobile?.addEventListener("change", () => {{
+    syncMobileToDesktop();
+    applyFilters();
+  }});
+
+  videoMobile?.addEventListener("change", () => {{
+    syncMobileToDesktop();
+    applyFilters();
+  }});
+
+  document.querySelectorAll(".type-toggle").forEach(cb => {{
+    cb.addEventListener("change", applyFilters);
+  }});
+
+  document.querySelectorAll(".type-toggle-mobile").forEach(cb => {{
+    cb.addEventListener("change", () => {{
+      syncMobileToDesktop();
+      applyFilters();
+    }});
+  }});
 
   mapObj.on("popupopen", function(e) {{
     if (!isMobile()) return;
 
     setTimeout(() => {{
-      const popupEl = e.popup && e.popup._container;
+      const popupEl = e.popup && e.popup.getElement ? e.popup.getElement() : null;
       if (!popupEl) return;
 
-      const popupRect = popupEl.getBoundingClientRect();
-      const viewportHeight = window.innerHeight;
+      const contentEl = popupEl.querySelector(".leaflet-popup-content");
+      if (!contentEl) return;
 
-      const bottomOverflow = popupRect.bottom - (viewportHeight - 20);
-      const topOverflow = 20 - popupRect.top;
+      openBottomSheet(contentEl.innerHTML);
 
-      if (bottomOverflow > 0) {{
-        mapObj.panBy([0, bottomOverflow + 80], {{ animate: true }});
-      }} else if (topOverflow > 0) {{
-        mapObj.panBy([0, -(topOverflow + 20)], {{ animate: true }});
-      }}
-    }}, 120);
+      setTimeout(() => {{
+        try {{
+          mapObj.closePopup();
+        }} catch (err) {{
+          console.warn(err);
+        }}
+      }}, 10);
+    }}, 50);
   }});
 
+  mapObj.on("click", function() {{
+    if (isMobile()) closeBottomSheet();
+  }});
+
+  window.addEventListener("resize", () => {{
+    if (!isMobile()) {{
+      closeMobileFilters();
+      closeBottomSheet();
+    }}
+    applyFilters();
+  }});
+
+  syncDesktopToMobile();
   applyFilters();
 }});
 """
