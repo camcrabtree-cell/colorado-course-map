@@ -369,7 +369,7 @@ for _, r in df.iterrows():
         fill=True,
         fill_color=color,
         fill_opacity=0.9,
-        popup=folium.Popup(popup_html, max_width=520),
+        popup=folium.Popup(popup_html, max_width=380),
     )
     marker.add_to(type_groups.get(ctype, type_groups["Public"]))
 
@@ -380,23 +380,18 @@ for _, r in df.iterrows():
     courses_export.append(
         {
             "id": len(courses_export) + 1,
-
             "name": course,
             "city": city,
             "region": region,
             "type": ctype,
             "address": address,
-
             "lat": float(r["Lat"]),
             "lng": float(r["Long"]),
-
             "played": bool(played_by_cam),
             "order": order_num,
             "first_played": first_played_iso,
-
             "video_url": reel_url if reel_url else None,
             "has_video": bool(has_video),
-
             "apple_maps": apple_maps,
             "google_maps": google_maps,
         }
@@ -460,9 +455,40 @@ custom_css = """
     background: rgba(255,255,255,0.92) !important;
     border: 1px solid rgba(0,0,0,0.18) !important;
   }
+
   .leaflet-control-search .search-input {
     width: 230px !important;
     border-radius: 12px !important;
+  }
+
+  .leaflet-popup-content-wrapper {
+    border-radius: 18px !important;
+  }
+
+  .leaflet-popup-content {
+    margin: 12px 12px 14px !important;
+    width: min(86vw, 420px) !important;
+    max-width: min(86vw, 420px) !important;
+  }
+
+  @media (max-width: 768px) {
+    .leaflet-popup-content {
+      width: min(84vw, 340px) !important;
+      max-width: min(84vw, 340px) !important;
+      max-height: 58vh !important;
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .leaflet-popup-content-wrapper {
+      max-height: 62vh !important;
+      overflow: hidden !important;
+    }
+
+    .leaflet-popup-tip-container {
+      margin-top: -1px;
+    }
   }
 </style>
 """
@@ -585,6 +611,31 @@ document.addEventListener("DOMContentLoaded", function() {{
   document.getElementById("filterNone")?.addEventListener("click", () => {{
     document.querySelectorAll(".type-toggle").forEach(cb => cb.checked = false);
     applyFilters();
+  }});
+
+  function isMobile() {{
+    return window.innerWidth <= 768;
+  }}
+
+  mapObj.on("popupopen", function(e) {{
+    if (!isMobile()) return;
+
+    setTimeout(() => {{
+      const popupEl = e.popup && e.popup._container;
+      if (!popupEl) return;
+
+      const popupRect = popupEl.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      const bottomOverflow = popupRect.bottom - (viewportHeight - 20);
+      const topOverflow = 20 - popupRect.top;
+
+      if (bottomOverflow > 0) {{
+        mapObj.panBy([0, bottomOverflow + 80], {{ animate: true }});
+      }} else if (topOverflow > 0) {{
+        mapObj.panBy([0, -(topOverflow + 20)], {{ animate: true }});
+      }}
+    }}, 120);
   }});
 
   applyFilters();
