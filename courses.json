@@ -1,9 +1,9 @@
 {
   "meta": {
     "schema_version": 2,
-    "generated_at": "2026-04-12T17:40:17.954421Z",
-    "generated_at_unix": 1776015617,
-    "count": 292,
+    "generated_at": "2026-06-19T15:36:36.005893Z",
+    "generated_at_unix": 1781883396,
+    "count": 295,
     "source_file": "co_courses.xlsx"
   },
   "courses": [
@@ -26,6 +26,23 @@
     },
     {
       "id": 2,
+      "name": "Adriel Hills Condominium Associates",
+      "city": "Fort Collins",
+      "region": "Front Range North",
+      "type": "Private",
+      "address": "1900 Kedron Cir, Fort Collins, CO 80524",
+      "lat": 40.609129,
+      "lng": -105.039573,
+      "played": false,
+      "order": null,
+      "first_played": null,
+      "video_url": null,
+      "has_video": false,
+      "apple_maps": "https://maps.apple.com/?q=1900%20Kedron%20Cir%2C%20Fort%20Collins%2C%20CO%2080524",
+      "google_maps": "https://www.google.com/maps/search/?api=1&query=1900%20Kedron%20Cir%2C%20Fort%20Collins%2C%20CO%2080524"
+    },
+    {
+      "id": 3,
       "name": "Antler Creek Golf Course",
       "city": "Falcon",
       "region": "Front Range South",
@@ -42,7 +59,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9650%20Antler%20Creek%20Drive%2C%20Falcon%2C%20CO%2080831"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Applewood Golf Course",
       "city": "Golden",
       "region": "Denver Area",
@@ -59,7 +76,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=14001%20W.%2032nd%20Ave%2C%20Golden%2C%20CO%2080401"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Arrowhead Golf Club",
       "city": "Littleton",
       "region": "Denver Area",
@@ -76,7 +93,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10850%20W.%20Sundown%20Trail%2C%20Littleton%2C%20CO%2080125"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Aspen Glen Club",
       "city": "Carbondale",
       "region": "Mountain Area",
@@ -93,7 +110,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=545%20Bald%20Eagle%20Way%2C%20Carbondale%2C%20CO%2081623"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Aspen Golf & Tennis Club",
       "city": "Aspen",
       "region": "Mountain Area",
@@ -110,7 +127,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=39551%20Highway%2082%2C%20Aspen%2C%20CO%2081611"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Aurora Hills Golf Course",
       "city": "Aurora",
       "region": "Denver Area",
@@ -127,7 +144,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=50%20S.%20Peoria%20St%2C%20Aurora%2C%20CO%2080012"
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Ballyneal",
       "city": "Holyoke",
       "region": "Front Range North",
@@ -144,7 +161,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=One%20Ballyneal%20Lane%2C%20Holyoke%2C%20CO%2080734"
     },
     {
-      "id": 9,
+      "id": 10,
       "name": "Ballyneal Short Course",
       "city": "Holyoke",
       "region": "Front Range North",
@@ -161,7 +178,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=One%20Ballyneal%20Lane%2C%20Holyoke%2C%20CO%2080734"
     },
     {
-      "id": 10,
+      "id": 11,
       "name": "Battlement Mesa Golf Club",
       "city": "Parachute",
       "region": "West Slope",
@@ -178,7 +195,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3930%20N.%20Battlement%20Pkwy%2C%20Parachute%2C%20CO%2081635"
     },
     {
-      "id": 11,
+      "id": 12,
       "name": "Bear Creek Golf Club",
       "city": "Denver",
       "region": "Denver Area",
@@ -195,7 +212,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=12201%20Morrison%20Rd%2C%20Denver%2C%20CO%2080228"
     },
     {
-      "id": 12,
+      "id": 13,
       "name": "Bear Dance, The Golf Club at",
       "city": "Larkspur",
       "region": "Denver Area",
@@ -212,7 +229,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6630%20Bear%20Dance%20Road%2C%20Larkspur%2C%20CO%2080118"
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "Beaver Creek Golf Club",
       "city": "Avon",
       "region": "Mountain Area",
@@ -229,7 +246,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=103%20Offerson%20Road%2C%20Avon%2C%20CO%2081620"
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "Bella Ridge Golf Club",
       "city": "Johnstown",
       "region": "Front Range North",
@@ -246,7 +263,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5749%20County%20Rd%2042%2C%20Johnstown%2C%20CO%2080534"
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "Bella Rosa Municipal Golf Course",
       "city": "Frederick",
       "region": "Front Range North",
@@ -263,7 +280,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5830%20Bella%20Rosa%20Parkway%2C%20Frederick%2C%20CO%2080504"
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Black Canyon Golf Course",
       "city": "Montrose",
       "region": "West Slope",
@@ -280,7 +297,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1350%20Birch%20St%2C%20Montrose%2C%20CO%2081401"
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Bookcliff Country Club",
       "city": "Grand Junction",
       "region": "West Slope",
@@ -297,7 +314,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2730%20G%20Road%2C%20Grand%20Junction%2C%20CO%2081506"
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Boomerang Golf Links",
       "city": "Greeley",
       "region": "Front Range North",
@@ -314,7 +331,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7309%20W%204th%20St%20Greeley%2C%20CO%2080634"
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Boomerang Golf Links - Short Course",
       "city": "Greeley",
       "region": "Front Range North",
@@ -331,7 +348,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7309%20W%204th%20St%20Greeley%2C%20CO%2080634"
     },
     {
-      "id": 20,
+      "id": 21,
       "name": "Boulder Country Club",
       "city": "Boulder",
       "region": "Denver Area",
@@ -348,7 +365,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7350%20Clubhouse%20Rd%2C%20Boulder%2C%20CO%2080301"
     },
     {
-      "id": 21,
+      "id": 22,
       "name": "Boulder Country Club - Par 3",
       "city": "Boulder",
       "region": "Denver Area",
@@ -365,7 +382,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7350%20Clubhouse%20Rd%2C%20Boulder%2C%20CO%2080301"
     },
     {
-      "id": 22,
+      "id": 23,
       "name": "Breckenridge Golf Club - Bear",
       "city": "Breckenridge",
       "region": "Mountain Area",
@@ -382,7 +399,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=200%20Clubhouse%20Drive%2C%20Breckenridge%2C%20CO%2080424"
     },
     {
-      "id": 23,
+      "id": 24,
       "name": "Breckenridge Golf Club - Beaver",
       "city": "Breckenridge",
       "region": "Mountain Area",
@@ -399,7 +416,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=200%20Clubhouse%20Drive%2C%20Breckenridge%2C%20CO%2080424"
     },
     {
-      "id": 24,
+      "id": 25,
       "name": "Breckenridge Golf Club - Elk",
       "city": "Breckenridge",
       "region": "Mountain Area",
@@ -416,7 +433,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=200%20Clubhouse%20Drive%2C%20Breckenridge%2C%20CO%2080424"
     },
     {
-      "id": 25,
+      "id": 26,
       "name": "Bridges, The",
       "city": "Montrose",
       "region": "West Slope",
@@ -433,7 +450,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2500%20Bridges%20Dr%2C%20Montrose%2C%20CO%2081401"
     },
     {
-      "id": 26,
+      "id": 27,
       "name": "Broadlands Golf Course",
       "city": "Broomfield",
       "region": "Denver Area",
@@ -450,7 +467,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4380%20W%20144th%20Ave%2C%20Broomfield%2C%20CO%2080020"
     },
     {
-      "id": 27,
+      "id": 28,
       "name": "Broadmoor Golf Club East",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -467,7 +484,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1%20Lake%20Avenue%2C%20Colorado%20Springs%2C%20CO%2080906"
     },
     {
-      "id": 28,
+      "id": 29,
       "name": "Broadmoor Golf Club West",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -484,7 +501,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1%20Lake%20Avenue%2C%20Colorado%20Springs%2C%20CO%2080906"
     },
     {
-      "id": 29,
+      "id": 30,
       "name": "Broken Tee Golf Course",
       "city": "Englewood",
       "region": "Denver Area",
@@ -501,7 +518,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2101%20W%20Oxford%20Ave%2C%20Englewood%2C%20CO%2080110"
     },
     {
-      "id": 30,
+      "id": 31,
       "name": "Broken Tee Golf Course - Par 3",
       "city": "Englewood",
       "region": "Denver Area",
@@ -518,7 +535,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2101%20W%20Oxford%20Ave%2C%20Englewood%2C%20CO%2080110"
     },
     {
-      "id": 31,
+      "id": 32,
       "name": "Buffalo Run Golf Course",
       "city": "Commerce City",
       "region": "Denver Area",
@@ -535,7 +552,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=15700%20E%20112th%20Ave%2C%20Commerce%20City%2C%20CO%2080022%20%E2%80%8B"
     },
     {
-      "id": 32,
+      "id": 33,
       "name": "Castle Pines Golf Club",
       "city": "Castle Rock",
       "region": "Denver Area",
@@ -552,7 +569,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1000%20Hummingbird%20Dr%2C%20Castle%20Rock%2C%20CO%2080108"
     },
     {
-      "id": 33,
+      "id": 34,
       "name": "Castle Pines, The Country Club at",
       "city": "Castle Rock",
       "region": "Denver Area",
@@ -569,7 +586,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6400%20Country%20Club%20Dr%2C%20Castle%20Rock%2C%20CO%2080108"
     },
     {
-      "id": 34,
+      "id": 35,
       "name": "Catamount Ranch & Club",
       "city": "Steamboat Springs",
       "region": "Mountain Area",
@@ -586,7 +603,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=33400A%20Catamount%20Drive%2C%20Steamboat%20Springs%2C%20CO%2080487"
     },
     {
-      "id": 35,
+      "id": 36,
       "name": "Cattail Creek Golf Course",
       "city": "Loveland",
       "region": "Front Range North",
@@ -603,7 +620,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2116%20W%2029th%20St%2C%20Loveland%2C%20CO%2080538"
     },
     {
-      "id": 36,
+      "id": 37,
       "name": "Cedar Ridges Golf Course",
       "city": "Rangely",
       "region": "West Slope",
@@ -620,7 +637,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=502%20County%20Road%20108%2C%20Rangely%2C%20CO%2081648"
     },
     {
-      "id": 37,
+      "id": 38,
       "name": "Cedaredge Golf Club",
       "city": "Cedaredge",
       "region": "West Slope",
@@ -637,7 +654,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=500%20SE%20Jay%20Avenue%2C%20Cedaredge%2C%20CO%2081413"
     },
     {
-      "id": 38,
+      "id": 39,
       "name": "Challenger Golf Course",
       "city": "Alamosa",
       "region": "Mountain Area",
@@ -654,7 +671,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=67581%20County%20Road%20T%2C%20Crestone%2C%20CO%2081131"
     },
     {
-      "id": 39,
+      "id": 40,
       "name": "Cherokee Ridge Golf Course",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -671,7 +688,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1850%20Tuskegee%20Place%2C%20Colorado%20Springs%2C%20CO%2080915"
     },
     {
-      "id": 40,
+      "id": 41,
       "name": "Cherokee Ridge Golf Course - Par 3",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -688,7 +705,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1850%20Tuskegee%20Place%2C%20Colorado%20Springs%2C%20CO%2080915"
     },
     {
-      "id": 41,
+      "id": 42,
       "name": "Cherry Creek Country Club",
       "city": "Denver",
       "region": "Denver Area",
@@ -705,7 +722,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2405%20S%20Yosemite%20St%2C%20Denver%2C%20CO%2080231"
     },
     {
-      "id": 42,
+      "id": 43,
       "name": "Cherry Hills Country Club",
       "city": "Cherry Hills",
       "region": "Denver Area",
@@ -722,7 +739,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4125%20S%20University%20Blvd%2C%20Cherry%20Hills%20Village%2C%20CO%2080113"
     },
     {
-      "id": 43,
+      "id": 44,
       "name": "Cherry Hills Country Club - Par 3",
       "city": "Cherry Hills",
       "region": "Denver Area",
@@ -739,7 +756,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4125%20S%20University%20Blvd%2C%20Cherry%20Hills%20Village%2C%20CO%2080113"
     },
     {
-      "id": 44,
+      "id": 45,
       "name": "Cheyenne Shadows Golf Club at Fort Carson",
       "city": "Fort Carson",
       "region": "Front Range South",
@@ -756,7 +773,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7800%20Titus%20Blvd%2C%20Fort%20Carson%2C%20CO%2080913"
     },
     {
-      "id": 45,
+      "id": 46,
       "name": "Chipeta Golf Course",
       "city": "Grand Junction",
       "region": "West Slope",
@@ -773,7 +790,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=222%2029%20Road%2C%20Grand%20Junction%2C%20CO%2081503"
     },
     {
-      "id": 46,
+      "id": 47,
       "name": "City Park Golf Course - Denver",
       "city": "Denver",
       "region": "Denver Area",
@@ -790,7 +807,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3181%20E%2023rd%20Ave%2C%20Denver%2C%20CO%2080205"
     },
     {
-      "id": 47,
+      "id": 48,
       "name": "City Park Nine Golf Course",
       "city": "Fort Collins",
       "region": "Front Range North",
@@ -807,14 +824,14 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=411%20S%20Bryan%20Ave%2C%20Fort%20Collins%2C%20CO%2080521"
     },
     {
-      "id": 48,
+      "id": 49,
       "name": "ClubCorp at Black Bear Golf Club",
       "city": "Parker",
       "region": "Denver Area",
       "type": "Private",
       "address": "11400 Canterberry Pkwy, Parker, CO 80138",
-      "lat": 39.4834,
-      "lng": -104.7378,
+      "lat": 39.507666,
+      "lng": -104.724169,
       "played": false,
       "order": null,
       "first_played": null,
@@ -824,7 +841,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=11400%20Canterberry%20Pkwy%2C%20Parker%2C%20CO%2080138"
     },
     {
-      "id": 49,
+      "id": 50,
       "name": "ClubCorp at Blackstone Country Club",
       "city": "Aurora",
       "region": "Denver Area",
@@ -841,7 +858,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7777%20S%20Country%20Club%20Pkwy%2C%20Aurora%2C%20CO%2080016"
     },
     {
-      "id": 50,
+      "id": 51,
       "name": "Coal Creek Golf Course",
       "city": "Louisville",
       "region": "Denver Area",
@@ -858,7 +875,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=585%20W%20Dillon%20Rd%2C%20Louisville%2C%20CO%2080027"
     },
     {
-      "id": 51,
+      "id": 52,
       "name": "Cobble Creek, The Links at",
       "city": "Montrose",
       "region": "West Slope",
@@ -875,7 +892,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=699%20Cobble%20Dr%2C%20Montrose%2C%20CO%2081401"
     },
     {
-      "id": 52,
+      "id": 53,
       "name": "Collegiate Peaks Golf Course",
       "city": "Buena Vista",
       "region": "Mountain Area",
@@ -892,7 +909,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=28775%20Fairway%20Dr%2C%20Buena%20Vista%2C%20CO%2081211"
     },
     {
-      "id": 53,
+      "id": 54,
       "name": "Collindale Golf Course",
       "city": "Fort Collins",
       "region": "Front Range North",
@@ -909,7 +926,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1441%20E%20Horsetooth%20Rd%2C%20Fort%20Collins%2C%20CO%2080525"
     },
     {
-      "id": 54,
+      "id": 55,
       "name": "Colorado Golf Club",
       "city": "Parker",
       "region": "Denver Area",
@@ -926,7 +943,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8000%20Preservation%20Trail%2C%20Parker%2C%20CO%2080134"
     },
     {
-      "id": 55,
+      "id": 56,
       "name": "Colorado Golf Club Short Course",
       "city": "Parker",
       "region": "Denver Area",
@@ -943,7 +960,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8000%20Preservation%20Trail%2C%20Parker%2C%20CO%2080134"
     },
     {
-      "id": 56,
+      "id": 57,
       "name": "Colorado National Golf Club",
       "city": "Erie",
       "region": "Denver Area",
@@ -960,7 +977,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2700%20Vista%20Pkwy%2C%20Erie%2C%20CO%2080516"
     },
     {
-      "id": 57,
+      "id": 58,
       "name": "Colorado Springs Country Club",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -977,7 +994,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3333%20Templeton%20Gap%20Rd%2C%20Colorado%20Springs%2C%20CO%2080907"
     },
     {
-      "id": 58,
+      "id": 59,
       "name": "Columbine Country Club",
       "city": "Littleton",
       "region": "Denver Area",
@@ -994,7 +1011,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=17%20Fairway%20Ln%2C%20Littleton%2C%20CO%2080123"
     },
     {
-      "id": 59,
+      "id": 60,
       "name": "Columbine Country Club - Par 3",
       "city": "Littleton",
       "region": "Denver Area",
@@ -1011,7 +1028,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=17%20Fairway%20Ln%2C%20Littleton%2C%20CO%2080123"
     },
     {
-      "id": 60,
+      "id": 61,
       "name": "CommonGround Golf Course",
       "city": "Aurora",
       "region": "Denver Area",
@@ -1028,7 +1045,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10300%20E%20Golfers%20Way%2C%20Aurora%2C%20CO%2080010"
     },
     {
-      "id": 61,
+      "id": 62,
       "name": "CommonGround Golf Course - Par 3",
       "city": "Aurora",
       "region": "Denver Area",
@@ -1045,7 +1062,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10300%20E%20Golfers%20Way%2C%20Aurora%2C%20CO%2080010"
     },
     {
-      "id": 62,
+      "id": 63,
       "name": "Conquistador Golf Course",
       "city": "Cortez",
       "region": "West Slope",
@@ -1062,7 +1079,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2018%20N%20Dolores%20Rd%2C%20Cortez%2C%20CO%2081321"
     },
     {
-      "id": 63,
+      "id": 64,
       "name": "Copper Creek Golf Club",
       "city": "Copper Mountain",
       "region": "Mountain Area",
@@ -1079,7 +1096,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=104%20Wheeler%20Pl%2C%20Copper%20Mountain%2C%20CO%2080443"
     },
     {
-      "id": 64,
+      "id": 65,
       "name": "Cordillera, Club at - Mountain Course",
       "city": "Edwards",
       "region": "Mountain Area",
@@ -1096,7 +1113,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=655%20Clubhouse%20Dr%2C%20Edwards%2C%20CO%2081632"
     },
     {
-      "id": 65,
+      "id": 66,
       "name": "Cordillera, Club at - Short Course",
       "city": "Edwards",
       "region": "Mountain Area",
@@ -1113,7 +1130,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=100%20Kensington%20Dr%2C%20Edwards%2C%20CO%2081632"
     },
     {
-      "id": 66,
+      "id": 67,
       "name": "Cordillera, Club at - Summt Course",
       "city": "Edwards",
       "region": "Mountain Area",
@@ -1130,7 +1147,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=190%20Gore%20Trail%2C%20Edwards%2C%20CO%2081632"
     },
     {
-      "id": 67,
+      "id": 68,
       "name": "Cordillera, Club at - Valley Course",
       "city": "Edwards",
       "region": "Mountain Area",
@@ -1147,7 +1164,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=655%20Clubhouse%20Dr%2C%20Edwards%2C%20CO%2081632"
     },
     {
-      "id": 68,
+      "id": 69,
       "name": "Cornterstone Club",
       "city": "Montrose",
       "region": "West Slope",
@@ -1164,7 +1181,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=Unnamed%20Rd%2C%20Montrose%2C%20CO%2081403"
     },
     {
-      "id": 69,
+      "id": 70,
       "name": "Cottonwood Links Golf Club",
       "city": "Fowler",
       "region": "Front Range South",
@@ -1181,7 +1198,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1%20Cottonwood%20Ln%2C%20Fowler%2C%20CO%2081039"
     },
     {
-      "id": 70,
+      "id": 71,
       "name": "Country Club at Woodmoor",
       "city": "Monument",
       "region": "Front Range South",
@@ -1198,7 +1215,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=18945%20Pebble%20Beach%20Way%2C%20Monument%2C%20CO%2080132"
     },
     {
-      "id": 71,
+      "id": 72,
       "name": "Country Club of Colorado",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -1215,7 +1232,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=125%20Clubhouse%20Dr%2C%20Colorado%20Springs%2C%20CO%2080906"
     },
     {
-      "id": 72,
+      "id": 73,
       "name": "Country Club of the Rockies",
       "city": "Edwards",
       "region": "Mountain Area",
@@ -1232,7 +1249,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=676%20Sawatch%20Dr%2C%20Edwards%2C%20CO%2081632"
     },
     {
-      "id": 73,
+      "id": 74,
       "name": "Coyote Creek Golf Course",
       "city": "Fort Lupton",
       "region": "Front Range North",
@@ -1249,7 +1266,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=222%20Clubhouse%20Dr%2C%20Fort%20Lupton%2C%20CO%2080621"
     },
     {
-      "id": 74,
+      "id": 75,
       "name": "Crested Butte, The Club at",
       "city": "Crested Butte",
       "region": "Mountain Area",
@@ -1266,7 +1283,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=385%20Country%20Club%20Dr%2C%20Crested%20Butte%2C%20CO%2081224"
     },
     {
-      "id": 75,
+      "id": 76,
       "name": "Dalton Ranch Golf Club",
       "city": "Durango",
       "region": "West Slope",
@@ -1283,7 +1300,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=589%20County%20Rd%20252%2C%20Durango%2C%20CO%2081301"
     },
     {
-      "id": 76,
+      "id": 77,
       "name": "Denver Country Club",
       "city": "Denver",
       "region": "Denver Area",
@@ -1300,7 +1317,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1700%20E%201st%20Ave%2C%20Denver%2C%20CO%2080218"
     },
     {
-      "id": 77,
+      "id": 78,
       "name": "Desert Hawk at Pueblo West",
       "city": "Pueblo West",
       "region": "Front Range South",
@@ -1317,7 +1334,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=251%20S%20McCulloch%20Blvd%2C%20Pueblo%20West%2C%20CO%2081007"
     },
     {
-      "id": 78,
+      "id": 79,
       "name": "Devil’s Thumb Golf Club",
       "city": "Delta",
       "region": "West Slope",
@@ -1334,7 +1351,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9900%20Devils%20Thumb%20Rd%2C%20Delta%2C%20CO%2081416"
     },
     {
-      "id": 79,
+      "id": 80,
       "name": "Divide Ranch & Club",
       "city": "Ridgway",
       "region": "West Slope",
@@ -1351,7 +1368,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=151%20Divide%20Ranch%20Cir%2C%20Ridgway%2C%20CO%2081432"
     },
     {
-      "id": 80,
+      "id": 81,
       "name": "Dos Rios Golf Club",
       "city": "Gunnison",
       "region": "Mountain Area",
@@ -1368,7 +1385,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=501%20Camino%20Del%20Rio%2C%20Gunnison%2C%20CO%2081230"
     },
     {
-      "id": 81,
+      "id": 82,
       "name": "Eads Golf Course",
       "city": "Eads",
       "region": "Front Range South",
@@ -1385,7 +1402,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=14999%20Golf%20Course%20Rd%2C%20Eads%2C%20CO%2081036"
     },
     {
-      "id": 82,
+      "id": 83,
       "name": "Eagle Ranch Golf Course",
       "city": "Eagle",
       "region": "Mountain Area",
@@ -1402,7 +1419,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=0050%20Lime%20Park%20Dr%2C%20Eagle%2C%20CO%2081631"
     },
     {
-      "id": 83,
+      "id": 84,
       "name": "Eagle Springs Golf Club",
       "city": "Wolcott",
       "region": "Mountain Area",
@@ -1419,7 +1436,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=28521%20US-6%2C%20Wolcott%2C%20CO%2081655"
     },
     {
-      "id": 84,
+      "id": 85,
       "name": "Eagle Trace Golf Club",
       "city": "Broomfield",
       "region": "Denver Area",
@@ -1436,7 +1453,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1200%20Clubhouse%20Dr%2C%20Broomfield%2C%20CO%2080020"
     },
     {
-      "id": 85,
+      "id": 86,
       "name": "Eagle Vail Golf Club",
       "city": "Avon",
       "region": "Mountain Area",
@@ -1453,7 +1470,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=459%20Eagle%20Drive%2C%20Avon%2C%20CO%2081620"
     },
     {
-      "id": 86,
+      "id": 87,
       "name": "Eaton Country Club",
       "city": "Eaton",
       "region": "Front Range North",
@@ -1470,7 +1487,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=37661%20County%20Road%2039%2C%20Eaton%2C%20CO%2080615"
     },
     {
-      "id": 87,
+      "id": 88,
       "name": "Eisenhower Golf Club - Blue",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -1487,7 +1504,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=Bldg.%203170%2C%20Golf%20Course%20Road%2C%20USAF%20Academy%2C%20CO%2080840"
     },
     {
-      "id": 88,
+      "id": 89,
       "name": "Eisenhower Golf Club - Silver",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -1504,7 +1521,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=Bldg.%203170%2C%20Golf%20Course%20Road%2C%20USAF%20Academy%2C%20CO%2080840"
     },
     {
-      "id": 89,
+      "id": 90,
       "name": "Elmwood Golf Course",
       "city": "Pueblo",
       "region": "Front Range South",
@@ -1521,7 +1538,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3900%20Thatcher%20Ave%2C%20Pueblo%2C%20CO%2081005"
     },
     {
-      "id": 90,
+      "id": 91,
       "name": "Emerald Greens Golf Club",
       "city": "Denver",
       "region": "Denver Area",
@@ -1538,7 +1555,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=597%20S%20Clinton%20St%2C%20Denver%2C%20CO%2080247"
     },
     {
-      "id": 91,
+      "id": 92,
       "name": "Estes Park Golf Course",
       "city": "Estes Park",
       "region": "Front Range North",
@@ -1555,7 +1572,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1480%20Golf%20Course%20Road%2C%20Estes%20Park%2C%20CO%2080517"
     },
     {
-      "id": 92,
+      "id": 93,
       "name": "Evergreen Golf Course",
       "city": "Evergreen",
       "region": "Denver Area",
@@ -1572,7 +1589,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=29614%20Upper%20Bear%20Creek%20Rd%2C%20Evergreen%2C%20CO%2080439"
     },
     {
-      "id": 93,
+      "id": 94,
       "name": "F & H Golf Course",
       "city": "Fleming",
       "region": "Front Range North",
@@ -1580,16 +1597,16 @@
       "address": "43355 County Rd 30 Fleming CO 80728",
       "lat": 40.6885,
       "lng": -102.8043,
-      "played": false,
-      "order": null,
-      "first_played": null,
-      "video_url": null,
-      "has_video": false,
+      "played": true,
+      "order": 127,
+      "first_played": "2026-05-01",
+      "video_url": "https://www.instagram.com/reel/DYUhd_ch3aW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=43355%20County%20Rd%2030%20Fleming%20CO%2080728",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=43355%20County%20Rd%2030%20Fleming%20CO%2080728"
     },
     {
-      "id": 94,
+      "id": 95,
       "name": "Flatirons Golf Course",
       "city": "Boulder",
       "region": "Denver Area",
@@ -1606,7 +1623,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5706%20Arapahoe%20Ave%2C%20Boulder%2C%20CO%2080303"
     },
     {
-      "id": 95,
+      "id": 96,
       "name": "Flying Horse, The Club at",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -1623,7 +1640,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1880%20Weiskopf%20Point%2C%20Colorado%20Springs%2C%20CO%2080921"
     },
     {
-      "id": 96,
+      "id": 97,
       "name": "Flying Horse, The Club at - North",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -1640,7 +1657,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=15268%20Allen%20Ranch%20Road%2C%20Colorado%20Springs%2C%20CO%2080908"
     },
     {
-      "id": 97,
+      "id": 98,
       "name": "Foothils Championship 18",
       "city": "Denver",
       "region": "Denver Area",
@@ -1657,7 +1674,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3901%20S%20Carr%20St%2C%20Denver%2C%20CO%2080235"
     },
     {
-      "id": 98,
+      "id": 99,
       "name": "Foothils Executive 9",
       "city": "Denver",
       "region": "Denver Area",
@@ -1674,7 +1691,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3901%20S%20Carr%20St%2C%20Denver%2C%20CO%2080235"
     },
     {
-      "id": 99,
+      "id": 100,
       "name": "Foothils Par 3",
       "city": "Denver",
       "region": "Denver Area",
@@ -1691,7 +1708,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3901%20S%20Carr%20St%2C%20Denver%2C%20CO%2080235"
     },
     {
-      "id": 100,
+      "id": 101,
       "name": "Fort Collins Country Club",
       "city": "Fort Collins",
       "region": "Front Range North",
@@ -1708,7 +1725,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1920%20Country%20Club%20Rd%2C%20Fort%20Collins%2C%20CO%2080524"
     },
     {
-      "id": 101,
+      "id": 102,
       "name": "Fossil Trace Golf Club",
       "city": "Golden",
       "region": "Denver Area",
@@ -1719,13 +1736,13 @@
       "played": true,
       "order": 34,
       "first_played": "2022-05-08",
-      "video_url": null,
-      "has_video": false,
+      "video_url": "https://www.instagram.com/reel/DXWqbughP-Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=3050%20Illinois%20St%2C%20Golden%2C%20CO%2080401",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3050%20Illinois%20St%2C%20Golden%2C%20CO%2080401"
     },
     {
-      "id": 102,
+      "id": 103,
       "name": "Four Mile Ranch Golf Club",
       "city": "Canon City",
       "region": "Mountain Area",
@@ -1742,7 +1759,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3501%20Telegraph%20Trail%2C%20Ca%C3%B1on%20City%2C%20CO%2081212"
     },
     {
-      "id": 103,
+      "id": 104,
       "name": "Fox Acres Country Club",
       "city": "Red Feather Lakes",
       "region": "Denver Area",
@@ -1759,7 +1776,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1700%20County%20Road%2067J%2C%20Red%20Feather%20Lakes%2C%20CO%2080545"
     },
     {
-      "id": 104,
+      "id": 105,
       "name": "Fox Hill Club, The",
       "city": "Longmont",
       "region": "Front Range North",
@@ -1776,7 +1793,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1400%20CO-119%2C%20Longmont%2C%20CO%2080504"
     },
     {
-      "id": 105,
+      "id": 106,
       "name": "Fox Hollow Golf Course - Canyon",
       "city": "Lakewood",
       "region": "Denver Area",
@@ -1793,7 +1810,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13410%20W.%20Morrison%20Rd%2C%20Lakewood%2C%20CO%2080228"
     },
     {
-      "id": 106,
+      "id": 107,
       "name": "Fox Hollow Golf Course - Links",
       "city": "Lakewood",
       "region": "Denver Area",
@@ -1810,7 +1827,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13410%20W.%20Morrison%20Rd%2C%20Lakewood%2C%20CO%2080228"
     },
     {
-      "id": 107,
+      "id": 108,
       "name": "Fox Hollow Golf Course - Meadow",
       "city": "Lakewood",
       "region": "Denver Area",
@@ -1827,7 +1844,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13410%20W.%20Morrison%20Rd%2C%20Lakewood%2C%20CO%2080228"
     },
     {
-      "id": 108,
+      "id": 109,
       "name": "Frost Creek",
       "city": "Eagle",
       "region": "Mountain Area",
@@ -1844,7 +1861,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1094%20Frost%20Creek%20Drive%2C%20Eagle%2C%20CO%2081631"
     },
     {
-      "id": 109,
+      "id": 110,
       "name": "Garfield County Golf Course",
       "city": "Rifle",
       "region": "Mountain Area",
@@ -1861,7 +1878,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3004%20Highway%20325%2C%20Rifle%2C%20CO%2081650"
     },
     {
-      "id": 110,
+      "id": 111,
       "name": "Glacier Club, The",
       "city": "Durango",
       "region": "West Slope",
@@ -1878,7 +1895,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=600%20Glacier%20Club%20Drive%2C%20Durango%2C%20CO%2081301"
     },
     {
-      "id": 111,
+      "id": 112,
       "name": "Glenmoor Country Club",
       "city": "Cherry Hills Village",
       "region": "Denver Area",
@@ -1895,7 +1912,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=110%20Glenmoor%20Drive%2C%20Cherry%20Hills%20Village%2C%20CO%2080113"
     },
     {
-      "id": 112,
+      "id": 113,
       "name": "Glenwood Springs Golf Club",
       "city": "Glenwood Springs",
       "region": "Mountain Area",
@@ -1912,7 +1929,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=193%20Sunny%20Acres%20Rd%2C%20Glenwood%20Springs%2C%20CO%2081601"
     },
     {
-      "id": 113,
+      "id": 114,
       "name": "Granby Ranch",
       "city": "Granby",
       "region": "Mountain Area",
@@ -1929,7 +1946,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2579%20County%20Road%20894%2C%20Granby%2C%20CO%2080446"
     },
     {
-      "id": 114,
+      "id": 115,
       "name": "Grand Elk Golf Club",
       "city": "Granby",
       "region": "Mountain Area",
@@ -1946,7 +1963,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1300%20Ten%20Mile%20Drive%2C%20Granby%2C%20CO%2080446"
     },
     {
-      "id": 115,
+      "id": 116,
       "name": "Grand Lake Golf Course",
       "city": "Grand Lake",
       "region": "Mountain Area",
@@ -1963,7 +1980,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1415%20County%20Road%2048%2C%20Grand%20Lake%2C%20CO%2080447"
     },
     {
-      "id": 116,
+      "id": 117,
       "name": "Grand View Golf Course",
       "city": "Mead",
       "region": "Front Range North",
@@ -1980,7 +1997,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=Grand%20View%20Cir%2C%20Mead%2C%20CO%2080542"
     },
     {
-      "id": 117,
+      "id": 118,
       "name": "Grandote Peaks Golf Club",
       "city": "La Veta",
       "region": "West Slope",
@@ -1997,7 +2014,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5540%20CO-12%2C%20La%20Veta%2C%20CO%2081055"
     },
     {
-      "id": 118,
+      "id": 119,
       "name": "Greeley Country Club",
       "city": "Greeley",
       "region": "Front Range North",
@@ -2014,7 +2031,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4500%20W%2010th%20St%2C%20Greeley%2C%20CO%2080634"
     },
     {
-      "id": 119,
+      "id": 120,
       "name": "Green Valley Ranch Golf Club",
       "city": "Denver",
       "region": "Denver Area",
@@ -2031,7 +2048,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4900%20Himalaya%20Road%2C%20Denver%2C%20CO%2080249"
     },
     {
-      "id": 120,
+      "id": 121,
       "name": "Green Valley Ranch Golf Club - Par 3",
       "city": "Denver",
       "region": "Denver Area",
@@ -2048,7 +2065,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4900%20Himalaya%20Road%2C%20Denver%2C%20CO%2080249"
     },
     {
-      "id": 121,
+      "id": 122,
       "name": "Greenway Park Golf Course",
       "city": "Broomfield",
       "region": "Denver Area",
@@ -2065,7 +2082,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=110%20Greenway%20Drive%2C%20Broomfield%2C%20CO%2080020"
     },
     {
-      "id": 122,
+      "id": 123,
       "name": "Greg Mastriona Golf Courses at Hyland Hills - Blue",
       "city": "Westminster",
       "region": "Denver Area",
@@ -2082,7 +2099,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9650%20Sheridan%20Boulevard%2C%20Westminster%2C%20CO%2080031"
     },
     {
-      "id": 123,
+      "id": 124,
       "name": "Greg Mastriona Golf Courses at Hyland Hills - Gold",
       "city": "Westminster",
       "region": "Denver Area",
@@ -2099,7 +2116,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9650%20Sheridan%20Boulevard%2C%20Westminster%2C%20CO%2080031"
     },
     {
-      "id": 124,
+      "id": 125,
       "name": "Gypsum Creek Golf Course",
       "city": "Gypsum",
       "region": "Mountain Area",
@@ -2116,7 +2133,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=530%20Cotton%20Ranch%20Drive%2C%20Gypsum%2C%20CO%2081637"
     },
     {
-      "id": 125,
+      "id": 126,
       "name": "Harmony Club",
       "city": "Timnath",
       "region": "Front Range North",
@@ -2133,7 +2150,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6432%20Grand%20Tree%20Blvd%2C%20Timnath%2C%20CO%2080547"
     },
     {
-      "id": 126,
+      "id": 127,
       "name": "Harvard Gulch Golf Course",
       "city": "Denver",
       "region": "Denver Area",
@@ -2150,7 +2167,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=660%20E.%20Iliff%20Ave%2C%20Denver%2C%20CO%2080210"
     },
     {
-      "id": 127,
+      "id": 128,
       "name": "Haymaker Golf Course",
       "city": "Steamboat Springs",
       "region": "Mountain Area",
@@ -2167,7 +2184,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=34855%20US-40%20East%2C%20Steamboat%20Springs%2C%20CO%2080487"
     },
     {
-      "id": 128,
+      "id": 129,
       "name": "Heather Gardens Golf Course",
       "city": "Aurora",
       "region": "Denver Area",
@@ -2184,7 +2201,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2888%20S%20Heather%20Gardens%20Way%2C%20Aurora%2C%20CO%2080014"
     },
     {
-      "id": 129,
+      "id": 130,
       "name": "Heather Ridge, The Golf Club at",
       "city": "Aurora",
       "region": "Denver Area",
@@ -2201,7 +2218,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13521%20E%20Iliff%20Ave%2C%20Aurora%2C%20CO%2080014"
     },
     {
-      "id": 130,
+      "id": 131,
       "name": "Hemingway Hunting & Fishing Resort",
       "city": "Orchard",
       "region": "Front Range North",
@@ -2218,7 +2235,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=Unnamed%20Road%2C%20Orchard%2C%20CO%2080649"
     },
     {
-      "id": 131,
+      "id": 132,
       "name": "Heritage Eagle Bend Golf Club",
       "city": "Aurora",
       "region": "Denver Area",
@@ -2235,7 +2252,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=23155%20E%20Heritage%20Parkway%2C%20Aurora%2C%20CO%2080016"
     },
     {
-      "id": 132,
+      "id": 133,
       "name": "Highland Meadows Golf Course",
       "city": "Windsor",
       "region": "Front Range North",
@@ -2252,7 +2269,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6300%20Highland%20Meadows%20Parkway%2C%20Windsor%2C%20CO%2080550"
     },
     {
-      "id": 133,
+      "id": 134,
       "name": "Highlands Hills Golf Course",
       "city": "Greeley",
       "region": "Front Range North",
@@ -2269,7 +2286,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2200%20Clubhouse%20Drive%2C%20Greeley%2C%20CO%2080634"
     },
     {
-      "id": 134,
+      "id": 135,
       "name": "Highlands Ranch Golf Club",
       "city": "Highlands Ranch",
       "region": "Denver Area",
@@ -2286,7 +2303,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9000%20Creekside%20Way%2C%20Highlands%20Ranch%2C%20CO%2080129"
     },
     {
-      "id": 135,
+      "id": 136,
       "name": "Hillcrest Golf Club",
       "city": "Durango",
       "region": "West Slope",
@@ -2303,7 +2320,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2300%20Rim%20Drive%2C%20Durango%2C%20CO%2081301"
     },
     {
-      "id": 136,
+      "id": 137,
       "name": "Hiwan Golf Club",
       "city": "Evergreen",
       "region": "Denver Area",
@@ -2320,7 +2337,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=30671%20Clubhouse%20Lane%2C%20Evergreen%2C%20CO%2080439"
     },
     {
-      "id": 137,
+      "id": 138,
       "name": "Holydot Golf Course",
       "city": "Colorado City",
       "region": "Front Range South",
@@ -2337,7 +2354,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=55%20North%20Parkway%20Drive%2C%20Colorado%20City%2C%20CO%2081019"
     },
     {
-      "id": 138,
+      "id": 139,
       "name": "Holyoke Golf Club",
       "city": "Holyoke",
       "region": "Front Range North",
@@ -2345,16 +2362,16 @@
       "address": "415 E Carnahan St, Holyoke, CO 80734",
       "lat": 40.5837,
       "lng": -102.3025,
-      "played": false,
-      "order": null,
-      "first_played": null,
-      "video_url": null,
-      "has_video": false,
+      "played": true,
+      "order": 126,
+      "first_played": "2026-04-29",
+      "video_url": "https://www.instagram.com/reel/DYFBP1zBcjX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=415%20E%20Carnahan%20St%2C%20Holyoke%2C%20CO%2080734",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=415%20E%20Carnahan%20St%2C%20Holyoke%2C%20CO%2080734"
     },
     {
-      "id": 139,
+      "id": 140,
       "name": "Homestead Golf Course",
       "city": "Lakewood",
       "region": "Denver Area",
@@ -2371,7 +2388,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=11500%20W%20Hampden%20Ave%2C%20Lakewood%2C%20CO%2080227"
     },
     {
-      "id": 140,
+      "id": 141,
       "name": "Hugo Golf Club",
       "city": "Hugo",
       "region": "Front Range South",
@@ -2388,7 +2405,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=44161%20County%20Highway%20109%2C%20Hugo%2C%20CO%2080821"
     },
     {
-      "id": 141,
+      "id": 142,
       "name": "Hunter’s Run Golf Course",
       "city": "Ignacio",
       "region": "West Slope",
@@ -2405,7 +2422,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8400%20State%20Highway%20172%2C%20Ignacio%2C%20CO%2081137"
     },
     {
-      "id": 142,
+      "id": 143,
       "name": "Hyland Hills Sotuh Par 3",
       "city": "Westminster",
       "region": "Denver Area",
@@ -2422,7 +2439,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9650%20Sheridan%20Boulevard%2C%20Westminster%2C%20CO%2080031"
     },
     {
-      "id": 143,
+      "id": 144,
       "name": "Indian Hills Golf Course",
       "city": "Yuma",
       "region": "Front Range North",
@@ -2439,7 +2456,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5294%20County%20Rd%2039%2C%20Yuma%2C%20CO%2080759"
     },
     {
-      "id": 144,
+      "id": 145,
       "name": "Indian Peaks Golf Course",
       "city": "Lafayette",
       "region": "Denver Area",
@@ -2456,7 +2473,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2300%20Indian%20Peaks%20Trail%2C%20Lafayette%2C%20CO%2080026"
     },
     {
-      "id": 145,
+      "id": 146,
       "name": "Indian Tree Golf Club",
       "city": "Arvada",
       "region": "Denver Area",
@@ -2473,7 +2490,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7555%20Wadsworth%20Blvd%2C%20Arvada%2C%20CO%2080003"
     },
     {
-      "id": 146,
+      "id": 147,
       "name": "Indian Tree Golf Club - Par 3",
       "city": "Arvada",
       "region": "Denver Area",
@@ -2490,7 +2507,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7555%20Wadsworth%20Blvd%2C%20Arvada%2C%20CO%2080003"
     },
     {
-      "id": 147,
+      "id": 148,
       "name": "Inverness Hotel Golf Club",
       "city": "Englewood",
       "region": "Denver Area",
@@ -2507,7 +2524,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=200%20Inverness%20Dr%20W%2C%20Englewood%2C%20CO%2080112"
     },
     {
-      "id": 148,
+      "id": 149,
       "name": "Ironbridge Golf Club",
       "city": "Glenwood Springs",
       "region": "Mountain Area",
@@ -2524,7 +2541,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=430%20Iron%20Bridge%20Rd%2C%20Glenwood%20Springs%2C%20CO%2081601"
     },
     {
-      "id": 149,
+      "id": 150,
       "name": "Kennedy Golf Course - Babe",
       "city": "Denver",
       "region": "Denver Area",
@@ -2541,7 +2558,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10500%20E%20Hampden%20Ave%2C%20Denver%2C%20CO%2080014"
     },
     {
-      "id": 150,
+      "id": 151,
       "name": "Kennedy Golf Course - Creek",
       "city": "Denver",
       "region": "Denver Area",
@@ -2558,7 +2575,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10500%20E%20Hampden%20Ave%2C%20Denver%2C%20CO%2080014"
     },
     {
-      "id": 151,
+      "id": 152,
       "name": "Kennedy Golf Course - Lind",
       "city": "Denver",
       "region": "Denver Area",
@@ -2575,7 +2592,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10500%20E%20Hampden%20Ave%2C%20Denver%2C%20CO%2080014"
     },
     {
-      "id": 152,
+      "id": 153,
       "name": "Kennedy Golf Course - Par 3",
       "city": "Denver",
       "region": "Denver Area",
@@ -2592,7 +2609,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10500%20E%20Hampden%20Ave%2C%20Denver%2C%20CO%2080014"
     },
     {
-      "id": 153,
+      "id": 154,
       "name": "Kennedy Golf Course - West",
       "city": "Denver",
       "region": "Denver Area",
@@ -2609,7 +2626,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10500%20E%20Hampden%20Ave%2C%20Denver%2C%20CO%2080014"
     },
     {
-      "id": 154,
+      "id": 155,
       "name": "Keystone Ranch Golf Course",
       "city": "Keystone",
       "region": "Mountain Area",
@@ -2626,7 +2643,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1239%20Keystone%20Ranch%20Rd%2C%20Keystone%2C%20CO%2080435"
     },
     {
-      "id": 155,
+      "id": 156,
       "name": "King's Deer Golf Club",
       "city": "Monument",
       "region": "Front Range South",
@@ -2643,7 +2660,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=19255%20Royal%20Troon%20Dr%2C%20Monument%2C%20CO%2080132"
     },
     {
-      "id": 156,
+      "id": 157,
       "name": "Kissing Camels at Garden of the Gods Club - North",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -2660,7 +2677,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4500%20Kissing%20Camels%20Dr%2C%20Colorado%20Springs%2C%20CO%2080904"
     },
     {
-      "id": 157,
+      "id": 158,
       "name": "Kissing Camels at Garden of the Gods Club - South",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -2677,7 +2694,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4500%20Kissing%20Camels%20Dr%2C%20Colorado%20Springs%2C%20CO%2080904"
     },
     {
-      "id": 158,
+      "id": 159,
       "name": "Kissing Camels at Garden of the Gods Club - West",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -2694,7 +2711,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4500%20Kissing%20Camels%20Dr%2C%20Colorado%20Springs%2C%20CO%2080904"
     },
     {
-      "id": 159,
+      "id": 160,
       "name": "La Junta Golf Club",
       "city": "La Junta",
       "region": "Front Range South",
@@ -2711,7 +2728,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=27696%20Harris%20Rd%2C%20La%20Junta%2C%20CO%2081050"
     },
     {
-      "id": 160,
+      "id": 161,
       "name": "Lake Arbor Golf Club",
       "city": "Arvada",
       "region": "Denver Area",
@@ -2728,7 +2745,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8600%20Wadsworth%20Blvd%2C%20Arvada%2C%20CO%2080003"
     },
     {
-      "id": 161,
+      "id": 162,
       "name": "Lake Estes Executive 9 Golf Course",
       "city": "Estes Park",
       "region": "Mountain Area",
@@ -2745,7 +2762,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=690%20Big%20Thompson%20Ave%2C%20Estes%20Park%2C%20CO%2080517"
     },
     {
-      "id": 162,
+      "id": 163,
       "name": "Lake Valley Golf Club",
       "city": "Niwot",
       "region": "Front Range North",
@@ -2762,7 +2779,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4400%20Lake%20Valley%20Dr%2C%20Niwot%2C%20CO%2080503"
     },
     {
-      "id": 163,
+      "id": 164,
       "name": "Lakewood Country Club",
       "city": "Lakewood",
       "region": "Denver Area",
@@ -2779,7 +2796,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6800%20W%2010th%20Ave%2C%20Lakewood%2C%20CO%2080214"
     },
     {
-      "id": 164,
+      "id": 165,
       "name": "Lakota Canyon Ranch Golf Club",
       "city": "New Castle",
       "region": "West Slope",
@@ -2796,7 +2813,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1000%20Clubhouse%20Dr%2C%20New%20Castle%2C%20CO%2081647"
     },
     {
-      "id": 165,
+      "id": 166,
       "name": "Las Animas Golf Course",
       "city": "Las Animas",
       "region": "Front Range South",
@@ -2813,7 +2830,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=220%20Country%20Club%20Dr%2C%20Las%20Animas%2C%20CO%2081054"
     },
     {
-      "id": 166,
+      "id": 167,
       "name": "Legacy Ridge Golf Course",
       "city": "Westminster",
       "region": "Denver Area",
@@ -2830,7 +2847,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10801%20Legacy%20Ridge%20Pkwy%2C%20Westminster%2C%20CO%2080031"
     },
     {
-      "id": 167,
+      "id": 168,
       "name": "Lincoln Park Golf Course",
       "city": "Grand Junction",
       "region": "West Slope",
@@ -2847,7 +2864,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=800%20Mantlo%20Cir%2C%20Grand%20Junction%2C%20CO%2081501"
     },
     {
-      "id": 168,
+      "id": 169,
       "name": "Links Golf Course, The",
       "city": "Highlands Ranch",
       "region": "Denver Area",
@@ -2864,7 +2881,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5815%20E%20Gleneagles%20Village%20Pkwy%2C%20Highlands%20Ranch%2C%20CO%2080130"
     },
     {
-      "id": 169,
+      "id": 170,
       "name": "Littleton Golf & Tennis Club",
       "city": "Littleton",
       "region": "Denver Area",
@@ -2881,7 +2898,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5800%20S%20Federal%20Blvd%2C%20Littleton%2C%20CO%2080123"
     },
     {
-      "id": 170,
+      "id": 171,
       "name": "Lone Tree Golf Club",
       "city": "Lone Tree",
       "region": "Denver Area",
@@ -2898,7 +2915,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9808%20Sunningdale%20Blvd%2C%20Lone%20Tree%2C%20CO%2080124"
     },
     {
-      "id": 171,
+      "id": 172,
       "name": "Mad Russian Golf Course, The",
       "city": "Milliken",
       "region": "Front Range North",
@@ -2915,7 +2932,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2100%20Country%20Club%20Pkwy%2C%20Milliken%2C%20CO%2080543"
     },
     {
-      "id": 172,
+      "id": 173,
       "name": "Mariana Butte Golf Course",
       "city": "Loveland",
       "region": "Front Range North",
@@ -2932,7 +2949,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=701%20Clubhouse%20Dr%2C%20Loveland%2C%20CO%2080537"
     },
     {
-      "id": 173,
+      "id": 174,
       "name": "Maroon Creek Club",
       "city": "Aspen",
       "region": "Mountain Area",
@@ -2949,7 +2966,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10%20Club%20Cir%2C%20Aspen%2C%20CO%2081611"
     },
     {
-      "id": 174,
+      "id": 175,
       "name": "Meadow Hills Golf Course",
       "city": "Aurora",
       "region": "Denver Area",
@@ -2966,7 +2983,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3609%20S%20Dawson%20St%2C%20Aurora%2C%20CO%2080014"
     },
     {
-      "id": 175,
+      "id": 176,
       "name": "Meadows Golf Club, The",
       "city": "Littleton",
       "region": "Denver Area",
@@ -2983,7 +3000,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7007%20Meadows%20Golf%20Club%20Dr%2C%20Littleton%2C%20CO%2080127"
     },
     {
-      "id": 176,
+      "id": 177,
       "name": "Meeker Golf Course",
       "city": "Meeker",
       "region": "West Slope",
@@ -3000,7 +3017,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=903%20County%20Rd%2013%2C%20Meeker%2C%20CO%2081641"
     },
     {
-      "id": 177,
+      "id": 178,
       "name": "Meridian Golf Club",
       "city": "Englewood",
       "region": "Denver Area",
@@ -3017,7 +3034,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9742%20S%20Meridian%20Blvd%2C%20Englewood%2C%20CO%2080112"
     },
     {
-      "id": 178,
+      "id": 179,
       "name": "Monte Vista Country Club",
       "city": "Monte Vista",
       "region": "Mountain Area",
@@ -3034,7 +3051,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=101%20Country%20Club%20Dr%2C%20Monte%20Vista%2C%20CO%2081144"
     },
     {
-      "id": 179,
+      "id": 180,
       "name": "Mossland Memorial",
       "city": "Flagler",
       "region": "Front Range North",
@@ -3051,7 +3068,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=16820%20Co%20Rd%205%2C%20Flagler%2C%20CO%2080815"
     },
     {
-      "id": 180,
+      "id": 181,
       "name": "Mount Massive Golf Course",
       "city": "Leadville",
       "region": "Mountain Area",
@@ -3068,7 +3085,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=259%20County%20Road%205%2C%20Leadville%2C%20CO%2080461"
     },
     {
-      "id": 181,
+      "id": 182,
       "name": "Mountain Meadows Golf Club",
       "city": "South Fork",
       "region": "Mountain Area",
@@ -3085,7 +3102,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1%20Mile%20W%20Dowdy%20Lake%20Rd%2C%20Red%20Feather%20Lakes%2C%20CO%2080545"
     },
     {
-      "id": 182,
+      "id": 183,
       "name": "Mountain Vista Greens Golf Course",
       "city": "Fort Collins",
       "region": "Front Range North",
@@ -3102,7 +3119,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2808%20NE%20Frontage%20Rd%2C%20Fort%20Collins%2C%20CO%2080524"
     },
     {
-      "id": 183,
+      "id": 184,
       "name": "Murphy Creek Golf Course",
       "city": "Aurora",
       "region": "Denver Area",
@@ -3119,7 +3136,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1700%20S%20Old%20Tom%20Morris%20Rd%2C%20Aurora%2C%20CO%2080018"
     },
     {
-      "id": 184,
+      "id": 185,
       "name": "Northeastern 18",
       "city": "Sterling",
       "region": "Front Range North",
@@ -3136,7 +3153,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=17408%20CO-14%2C%20Sterling%2C%20CO%2080751"
     },
     {
-      "id": 185,
+      "id": 186,
       "name": "Olde Course at Loveland, The",
       "city": "Loveland",
       "region": "Front Range North",
@@ -3153,7 +3170,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2115%20W%2029th%20St%2C%20Loveland%2C%20CO%2080538"
     },
     {
-      "id": 186,
+      "id": 187,
       "name": "Omni Interlocken Resort Golf Club - Eldorado",
       "city": "Broomfield",
       "region": "Denver Area",
@@ -3170,7 +3187,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=800%20Eldorado%20Blvd%2C%20Broomfield%2C%20CO%2080021"
     },
     {
-      "id": 187,
+      "id": 188,
       "name": "Omni Interlocken Resort Golf Club - Sunshine",
       "city": "Broomfield",
       "region": "Denver Area",
@@ -3187,7 +3204,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=800%20Eldorado%20Blvd%2C%20Broomfield%2C%20CO%2080021"
     },
     {
-      "id": 188,
+      "id": 189,
       "name": "Omni Interlocken Resort Golf Club - Vista",
       "city": "Broomfield",
       "region": "Denver Area",
@@ -3204,7 +3221,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=800%20Eldorado%20Blvd%2C%20Broomfield%2C%20CO%2080021"
     },
     {
-      "id": 189,
+      "id": 190,
       "name": "Overland Park Golf Course",
       "city": "Denver",
       "region": "Denver Area",
@@ -3221,7 +3238,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1801%20S%20Huron%20St%2C%20Denver%2C%20CO%2080223"
     },
     {
-      "id": 190,
+      "id": 191,
       "name": "Pagosa Springs Golf Course",
       "city": "Pagosa Springs",
       "region": "Mountain Area",
@@ -3238,7 +3255,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1%20Pines%20Club%20Pl%2C%20Pagosa%20Springs%2C%20CO%2081147"
     },
     {
-      "id": 191,
+      "id": 192,
       "name": "Patty Jewett Golf Course - Peak",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -3255,7 +3272,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=900%20E%20Espanola%20St%2C%20Colorado%20Springs%2C%20CO%2080907"
     },
     {
-      "id": 192,
+      "id": 193,
       "name": "Patty Jewett Golf Course - Plains",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -3272,7 +3289,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=900%20E%20Espanola%20St%2C%20Colorado%20Springs%2C%20CO%2080907"
     },
     {
-      "id": 193,
+      "id": 194,
       "name": "Patty Jewett Golf Course - Prairie",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -3289,7 +3306,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=900%20E%20Espanola%20St%2C%20Colorado%20Springs%2C%20CO%2080907"
     },
     {
-      "id": 194,
+      "id": 195,
       "name": "Pelican Lakes Golf & Country Club",
       "city": "Windsor",
       "region": "Front Range North",
@@ -3306,7 +3323,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1620%20Pelican%20Lakes%20Point%2C%20Windsor%2C%20CO%2080550"
     },
     {
-      "id": 195,
+      "id": 196,
       "name": "Pelican Lakes Golf & Country Club - Falls",
       "city": "Windsor",
       "region": "Front Range North",
@@ -3323,7 +3340,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1620%20Pelican%20Lakes%20Point%2C%20Windsor%2C%20CO%2080550"
     },
     {
-      "id": 196,
+      "id": 197,
       "name": "Perry Park Country Club",
       "city": "Larkspur",
       "region": "Denver Area",
@@ -3340,7 +3357,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7047%20Perry%20Park%20Blvd%2C%20Larkspur%2C%20CO%2080118"
     },
     {
-      "id": 197,
+      "id": 198,
       "name": "Petteys Park Golf Course",
       "city": "Brush",
       "region": "Front Range North",
@@ -3357,7 +3374,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2301%20West%20Mill%20St%2C%20Brush%2C%20CO%2080723"
     },
     {
-      "id": 198,
+      "id": 199,
       "name": "Pheasant Run Golf Course",
       "city": "Fort Morgan",
       "region": "Front Range North",
@@ -3374,7 +3391,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=14971%20E%20Pheasant%20Run%20Pkwy%2C%20Aurora%2C%20CO%2080015"
     },
     {
-      "id": 199,
+      "id": 200,
       "name": "Pine Creek Golf Club",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -3391,7 +3408,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9850%20Divot%20Trail%2C%20Colorado%20Springs%2C%20CO%2080920"
     },
     {
-      "id": 200,
+      "id": 201,
       "name": "Pinehurst Country Club",
       "city": "Denver",
       "region": "Denver Area",
@@ -3408,7 +3425,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6255%20W%20Quincy%20Ave%2C%20Denver%2C%20CO%2080235"
     },
     {
-      "id": 201,
+      "id": 202,
       "name": "Pinehurst Country Club Executive 9",
       "city": "Denver",
       "region": "Denver Area",
@@ -3425,7 +3442,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6255%20W%20Quincy%20Ave%2C%20Denver%2C%20CO%2080235"
     },
     {
-      "id": 202,
+      "id": 203,
       "name": "Pinery Country Club, The - Lake",
       "city": "Parker",
       "region": "Denver Area",
@@ -3442,7 +3459,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6900%20N%20Pinery%20Pkwy%2C%20Parker%2C%20CO%2080134"
     },
     {
-      "id": 203,
+      "id": 204,
       "name": "Pinery Country Club, The - Mountain",
       "city": "Parker",
       "region": "Denver Area",
@@ -3459,7 +3476,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6900%20N%20Pinery%20Pkwy%2C%20Parker%2C%20CO%2080134"
     },
     {
-      "id": 204,
+      "id": 205,
       "name": "Pinery Country Club, The - Valley",
       "city": "Parker",
       "region": "Denver Area",
@@ -3476,7 +3493,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6900%20N%20Pinery%20Pkwy%2C%20Parker%2C%20CO%2080134"
     },
     {
-      "id": 205,
+      "id": 206,
       "name": "Plainsman Golf Club",
       "city": "Kirk",
       "region": "Front Range North",
@@ -3493,7 +3510,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9785%20County%20Rd%204%2C%20Kirk%2C%20CO%2080824"
     },
     {
-      "id": 206,
+      "id": 207,
       "name": "Plum Creek Golf Club",
       "city": "Castle Rock",
       "region": "Denver Area",
@@ -3510,7 +3527,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=331%20Players%20Club%20Dr%2C%20Castle%20Rock%2C%20CO%2080104"
     },
     {
-      "id": 207,
+      "id": 208,
       "name": "Pole Creek Golf Club - Meadow",
       "city": "Tabernash",
       "region": "Mountain Area",
@@ -3527,7 +3544,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6827%20County%20Road%2051%2C%20Tabernash%2C%20CO%2080478"
     },
     {
-      "id": 208,
+      "id": 209,
       "name": "Pole Creek Golf Club - Ranch",
       "city": "Tabernash",
       "region": "Mountain Area",
@@ -3544,7 +3561,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6827%20County%20Road%2051%2C%20Tabernash%2C%20CO%2080478"
     },
     {
-      "id": 209,
+      "id": 210,
       "name": "Pole Creek Golf Club - Ridge",
       "city": "Tabernash",
       "region": "Mountain Area",
@@ -3561,7 +3578,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6827%20County%20Road%2051%2C%20Tabernash%2C%20CO%2080478"
     },
     {
-      "id": 210,
+      "id": 211,
       "name": "Pradera, The Club at",
       "city": "Parker",
       "region": "Denver Area",
@@ -3578,7 +3595,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5225%20Raintree%20Dr%2C%20Parker%2C%20CO%2080134"
     },
     {
-      "id": 211,
+      "id": 212,
       "name": "Prairie Pines Golf Club",
       "city": "Burlington",
       "region": "Front Range North",
@@ -3595,7 +3612,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=48680%20Snead%20Dr%2C%20Burlington%2C%20CO%2080807"
     },
     {
-      "id": 212,
+      "id": 213,
       "name": "Ptarmigan Country Club",
       "city": "Fort Collins",
       "region": "Front Range North",
@@ -3612,7 +3629,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5416%20Vardon%20Way%2C%20Fort%20Collins%2C%20CO%2080528"
     },
     {
-      "id": 213,
+      "id": 214,
       "name": "Pueblo Country Club",
       "city": "Pueblo",
       "region": "Front Range South",
@@ -3629,7 +3646,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3200%208th%20Ave%2C%20Pueblo%2C%20CO%2081008"
     },
     {
-      "id": 214,
+      "id": 215,
       "name": "Quail Dunes Golf Course",
       "city": "Fort Morgan",
       "region": "Front Range North",
@@ -3646,7 +3663,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=17586%20County%20Road%20T5%2C%20Fort%20Morgan%2C%20CO%2080701"
     },
     {
-      "id": 215,
+      "id": 216,
       "name": "Quint Valley Golf Club",
       "city": "Byers",
       "region": "Front Range North",
@@ -3663,7 +3680,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=280%20S%20County%20Road%20173%2C%20Byers%2C%20CO%2080103"
     },
     {
-      "id": 216,
+      "id": 217,
       "name": "Raccoon Creek Golf Course",
       "city": "Littleton",
       "region": "Denver Area",
@@ -3680,7 +3697,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7301%20W%20Bowles%20Ave%2C%20Littleton%2C%20CO%2080123"
     },
     {
-      "id": 217,
+      "id": 218,
       "name": "RainDance National",
       "city": "Windsor",
       "region": "Front Range North",
@@ -3697,7 +3714,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1775%20RainDance%20National%20Dr%2C%20Windsor%2C%20CO%2080550"
     },
     {
-      "id": 218,
+      "id": 219,
       "name": "Ranch at Roaring Fork Golf Course",
       "city": "Carbondale",
       "region": "Mountain Area",
@@ -3714,7 +3731,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=14913%20Hwy%2082%2C%20Carbondale%2C%20CO%2081623"
     },
     {
-      "id": 219,
+      "id": 220,
       "name": "Ranch Country Club, The",
       "city": "Westminster",
       "region": "Denver Area",
@@ -3731,7 +3748,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=11887%20Tejon%20St%2C%20Westminster%2C%20CO%2080234"
     },
     {
-      "id": 220,
+      "id": 221,
       "name": "Raven Golf Club at Three Peaks",
       "city": "Silverthorne",
       "region": "Mountain Area",
@@ -3748,7 +3765,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2929%20Golden%20Eagle%20Rd%2C%20Silverthorne%2C%20CO%2080498"
     },
     {
-      "id": 221,
+      "id": 222,
       "name": "Ravenna, The Club at",
       "city": "Littleton",
       "region": "Denver Area",
@@ -3765,7 +3782,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8285%20Dante%20Dr%2C%20Littleton%2C%20CO%2080125"
     },
     {
-      "id": 222,
+      "id": 223,
       "name": "Red Hawk Ridge Golf Course",
       "city": "Castle Rock",
       "region": "Denver Area",
@@ -3782,7 +3799,41 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2156%20Red%20Hawk%20Ridge%20Dr%2C%20Castle%20Rock%2C%20CO%2080109"
     },
     {
-      "id": 223,
+      "id": 224,
+      "name": "Red Sky Golf Club - Fazio",
+      "city": "Wolcott",
+      "region": "Mountain Area",
+      "type": "Resort",
+      "address": "376 Red Sky Rd, Wolcott, CO 81655",
+      "lat": 39.685017,
+      "lng": -106.689628,
+      "played": false,
+      "order": null,
+      "first_played": null,
+      "video_url": null,
+      "has_video": false,
+      "apple_maps": "https://maps.apple.com/?q=376%20Red%20Sky%20Rd%2C%20Wolcott%2C%20CO%2081655",
+      "google_maps": "https://www.google.com/maps/search/?api=1&query=376%20Red%20Sky%20Rd%2C%20Wolcott%2C%20CO%2081655"
+    },
+    {
+      "id": 225,
+      "name": "Red Sky Golf Club - Norman",
+      "city": "Wolcott",
+      "region": "Mountain Area",
+      "type": "Resort",
+      "address": "376 Red Sky Rd, Wolcott, CO 81655",
+      "lat": 39.687679,
+      "lng": -106.688475,
+      "played": false,
+      "order": null,
+      "first_played": null,
+      "video_url": null,
+      "has_video": false,
+      "apple_maps": "https://maps.apple.com/?q=376%20Red%20Sky%20Rd%2C%20Wolcott%2C%20CO%2081655",
+      "google_maps": "https://www.google.com/maps/search/?api=1&query=376%20Red%20Sky%20Rd%2C%20Wolcott%2C%20CO%2081655"
+    },
+    {
+      "id": 226,
       "name": "Red Rocks Country Club",
       "city": "Morrison",
       "region": "Denver Area",
@@ -3799,7 +3850,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=16235%20W%20Belleview%20Ave%2C%20Morrison%2C%20CO%2080465"
     },
     {
-      "id": 224,
+      "id": 227,
       "name": "Redlands Mesa, The Golf Club at",
       "city": "Grand Junction",
       "region": "West Slope",
@@ -3816,7 +3867,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2325%20W%20Ridges%20Blvd%2C%20Grand%20Junction%2C%20CO%2081507"
     },
     {
-      "id": 225,
+      "id": 228,
       "name": "Ridge at Castle Pines North, The",
       "city": "Castle Pines",
       "region": "Denver Area",
@@ -3833,7 +3884,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1414%20Castle%20Pines%20Pkwy%2C%20Castle%20Rock%2C%20CO%2080108"
     },
     {
-      "id": 226,
+      "id": 229,
       "name": "Rifle Creek Golf Course",
       "city": "Rifle",
       "region": "West Slope",
@@ -3850,7 +3901,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3004%20Highway%20325%2C%20Rifle%2C%20CO%2081650"
     },
     {
-      "id": 227,
+      "id": 230,
       "name": "Rio Grande Club",
       "city": "South Fork",
       "region": "Mountain Area",
@@ -3867,7 +3918,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=0285%20Rio%20Grande%20Club%20Trail%2C%20South%20Fork%2C%20CO%2081154"
     },
     {
-      "id": 228,
+      "id": 231,
       "name": "River Course at Keystone, The",
       "city": "Keystone",
       "region": "Mountain Area",
@@ -3884,7 +3935,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=155%20River%20Course%20Dr%2C%20Keystone%2C%20CO%2080435"
     },
     {
-      "id": 229,
+      "id": 232,
       "name": "River Valley Ranch Golf Club",
       "city": "Carbondale",
       "region": "Mountain Area",
@@ -3901,7 +3952,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=303%20River%20Valley%20Ranch%20Rd%2C%20Carbondale%2C%20CO%2081623"
     },
     {
-      "id": 230,
+      "id": 233,
       "name": "Riverdale Dunes Golf Course",
       "city": "Brighton",
       "region": "Denver Area",
@@ -3918,7 +3969,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13300%20Riverdale%20Rd%2C%20Brighton%2C%20CO%2080602"
     },
     {
-      "id": 231,
+      "id": 234,
       "name": "Riverdale The Knolls",
       "city": "Brighton",
       "region": "Denver Area",
@@ -3935,7 +3986,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13300%20Riverdale%20Rd%2C%20Brighton%2C%20CO%2080602"
     },
     {
-      "id": 232,
+      "id": 235,
       "name": "Riverview Golf Course",
       "city": "Sterling",
       "region": "Front Range North",
@@ -3952,7 +4003,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=22426%20County%20Road%2017%2C%20Sterling%2C%20CO%2080751"
     },
     {
-      "id": 233,
+      "id": 236,
       "name": "Roaring Fork Club",
       "city": "Basalt",
       "region": "Mountain Area",
@@ -3969,7 +4020,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=100%20Arbaney%20Ranch%20Rd%2C%20Basalt%2C%20CO%2081621"
     },
     {
-      "id": 234,
+      "id": 237,
       "name": "Rocky Ford Country Club",
       "city": "Rocky Ford",
       "region": "Front Range South",
@@ -3986,7 +4037,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=91%20Play%20Park%20Hill%20Dr%2C%20Rocky%20Ford%2C%20CO%2081067"
     },
     {
-      "id": 235,
+      "id": 238,
       "name": "Rodeo Dunes - Course #1",
       "city": "Roggen",
       "region": "Front Range North",
@@ -4003,7 +4054,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=34587%20I-76%20Frontage%20Rd%2C%20Roggen%2C%20CO%2080652"
     },
     {
-      "id": 236,
+      "id": 239,
       "name": "Rodeo Dunes - Course #2",
       "city": "Roggen",
       "region": "Front Range North",
@@ -4020,7 +4071,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=34587%20I-76%20Frontage%20Rd%2C%20Roggen%2C%20CO%2080652"
     },
     {
-      "id": 237,
+      "id": 240,
       "name": "Rolling Hills, The Club at",
       "city": "Golden",
       "region": "Denver Area",
@@ -4037,7 +4088,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=15707%20W%2026th%20Ave%2C%20Golden%2C%20CO%2080401"
     },
     {
-      "id": 238,
+      "id": 241,
       "name": "Rocking F Ranch",
       "city": "Bond",
       "region": "Mountain Area",
@@ -4054,7 +4105,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=19023%20CO-131%2C%20Bond%2C%20CO%2080423"
     },
     {
-      "id": 239,
+      "id": 242,
       "name": "Rollingstone Ranch Golf Club",
       "city": "Steamboat Springs",
       "region": "Mountain Area",
@@ -4071,7 +4122,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1230%20Steamboat%20Blvd%2C%20Steamboat%20Springs%2C%20CO%2080487"
     },
     {
-      "id": 240,
+      "id": 243,
       "name": "Saddle Rock Golf Course",
       "city": "Aurora",
       "region": "Denver Area",
@@ -4088,7 +4139,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=21705%20E%20Arapahoe%20Rd%2C%20Aurora%2C%20CO%2080016"
     },
     {
-      "id": 241,
+      "id": 244,
       "name": "Saddleback Golf Course",
       "city": "Firestone",
       "region": "Front Range North",
@@ -4105,7 +4156,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8631%20Frontier%20St%2C%20Firestone%2C%20CO%2080504"
     },
     {
-      "id": 242,
+      "id": 245,
       "name": "Salida Golf Club",
       "city": "Salida",
       "region": "Mountain Area",
@@ -4122,7 +4173,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=404%20Grant%20St%2C%20Salida%2C%20CO%2081201"
     },
     {
-      "id": 243,
+      "id": 246,
       "name": "Sanctuary",
       "city": "Sedalia",
       "region": "Denver Area",
@@ -4139,7 +4190,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7549%20Daniels%20Park%20Rd%2C%20Sedalia%2C%20CO%2080135"
     },
     {
-      "id": 244,
+      "id": 247,
       "name": "Sand Creek Golf Course",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -4156,7 +4207,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6865%20Galley%20Rd%2C%20Colorado%20Springs%2C%20CO%2080915"
     },
     {
-      "id": 245,
+      "id": 248,
       "name": "Sedgwick County Golf Course",
       "city": "Julesburg",
       "region": "Front Range North",
@@ -4173,7 +4224,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=State%20Highway%2011%2C%20Julesburg%2C%20CO%2080737"
     },
     {
-      "id": 246,
+      "id": 249,
       "name": "Shining Mountain Golf Club",
       "city": "Woodland Park",
       "region": "Mountain Area",
@@ -4190,7 +4241,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=100%20Shining%20Mountain%20Ln%2C%20Woodland%20Park%2C%20CO%2080863"
     },
     {
-      "id": 247,
+      "id": 250,
       "name": "Silver Spruce Golf Course",
       "city": "Military (Peterson AFB)",
       "region": "Front Range South",
@@ -4201,13 +4252,13 @@
       "played": true,
       "order": 1,
       "first_played": "2016-07-11",
-      "video_url": "https://www.instagram.com/reel/DJbqCQGtqOr/?igsh=MW5sMmZtZ2JhN3RxNg==",
+      "video_url": "https://www.instagram.com/reel/DZNJS6OhWu0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=401%20Glasgow%20Ave%2C%20Bldg%201054%2C%20Colorado%20Springs%2C%20CO%2080914",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=401%20Glasgow%20Ave%2C%20Bldg%201054%2C%20Colorado%20Springs%2C%20CO%2080914"
     },
     {
-      "id": 248,
+      "id": 251,
       "name": "Sky Ranch Golf Course",
       "city": "Sterling",
       "region": "Front Range North",
@@ -4224,7 +4275,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=17408%20CO-14%2C%20Sterling%2C%20CO%2080751"
     },
     {
-      "id": 249,
+      "id": 252,
       "name": "Smoky River Golf Club",
       "city": "Cheyenne Wells",
       "region": "Front Range South",
@@ -4241,7 +4292,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=475%20N%202nd%20St%20E%2C%20Cheyenne%20Wells%2C%20CO%2080810"
     },
     {
-      "id": 250,
+      "id": 253,
       "name": "Snowmass Club",
       "city": "Snowmass Village",
       "region": "Mountain Area",
@@ -4258,7 +4309,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=239%20Snowmass%20Club%20Cir%2C%20Snowmass%20Village%2C%20CO%2081615"
     },
     {
-      "id": 251,
+      "id": 254,
       "name": "Sonnenalp Club",
       "city": "Edwards",
       "region": "Mountain Area",
@@ -4275,7 +4326,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1265%20Berry%20Creek%20Rd%2C%20Edwards%2C%20CO%2081632"
     },
     {
-      "id": 252,
+      "id": 255,
       "name": "South Forty Golf Course",
       "city": "Cortez",
       "region": "West Slope",
@@ -4292,7 +4343,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=25500%20Co%20Rd%20H%2C%20Cortez%2C%20CO%2081321"
     },
     {
-      "id": 253,
+      "id": 256,
       "name": "South Suburban Family Sports Center",
       "city": "Dove Valley",
       "region": "Denver Area",
@@ -4309,7 +4360,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6901%20S%20Peoria%20St%2C%20Dove%20Valley%2C%20CO%2080112"
     },
     {
-      "id": 254,
+      "id": 257,
       "name": "South Suburban Golf Course - Par 3",
       "city": "Centennial",
       "region": "Denver Area",
@@ -4317,16 +4368,16 @@
       "address": "7900 S Colorado Blvd, Centennial, CO 80122",
       "lat": 39.574018,
       "lng": -104.939592,
-      "played": false,
-      "order": null,
-      "first_played": null,
-      "video_url": null,
-      "has_video": false,
+      "played": true,
+      "order": 128,
+      "first_played": "2026-05-03",
+      "video_url": "https://www.instagram.com/reel/DYrpxEzhC-6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=7900%20S%20Colorado%20Blvd%2C%20Centennial%2C%20CO%2080122",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7900%20S%20Colorado%20Blvd%2C%20Centennial%2C%20CO%2080122"
     },
     {
-      "id": 255,
+      "id": 258,
       "name": "South Suburban Golf Course - Regulation",
       "city": "Centennial",
       "region": "Denver Area",
@@ -4343,7 +4394,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7900%20S%20Colorado%20Blvd%2C%20Centennial%2C%20CO%2080122"
     },
     {
-      "id": 256,
+      "id": 259,
       "name": "Southglenn Country Club",
       "city": "Centennial",
       "region": "Denver Area",
@@ -4360,7 +4411,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1489%20E%20Easter%20Ave%2C%20Centennial%2C%20CO%2080122"
     },
     {
-      "id": 257,
+      "id": 260,
       "name": "SouthRidge Golf Club",
       "city": "Fort Collins",
       "region": "Front Range North",
@@ -4377,7 +4428,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5750%20S%20Lemay%20Ave%2C%20Fort%20Collins%2C%20CO%2080525"
     },
     {
-      "id": 258,
+      "id": 261,
       "name": "Spreading Antlers Golf Club",
       "city": "Lamar",
       "region": "Front Range South",
@@ -4394,7 +4445,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=28157%20US%20Highway%20287%2C%20Lamar%2C%20CO%2081052"
     },
     {
-      "id": 259,
+      "id": 262,
       "name": "Spring Valley Golf Course",
       "city": "Elizabeth",
       "region": "Front Range South",
@@ -4411,7 +4462,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=42350%20County%20Rd%2017/21%2C%20Elizabeth%2C%20CO%2080107"
     },
     {
-      "id": 260,
+      "id": 263,
       "name": "Springfield Municipal Golf Course",
       "city": "Springfield",
       "region": "Front Range South",
@@ -4428,7 +4479,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=24933%20Hwy%20160%2C%20Springfield%2C%20CO%2081073"
     },
     {
-      "id": 261,
+      "id": 264,
       "name": "Springhill Golf Course",
       "city": "Aurora",
       "region": "Denver Area",
@@ -4445,7 +4496,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=800%20Telluride%20St%2C%20Aurora%2C%20CO%2080011"
     },
     {
-      "id": 262,
+      "id": 265,
       "name": "Steamboat Golf Club",
       "city": "Steamboat Springs",
       "region": "Mountain Area",
@@ -4462,7 +4513,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=26815%20W%20US%20Highway%2040%2C%20Steamboat%20Springs%2C%20CO%2080487"
     },
     {
-      "id": 263,
+      "id": 266,
       "name": "Stoney Creek Golf Course",
       "city": "Arvada",
       "region": "Denver Area",
@@ -4479,7 +4530,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13939%20W%2096th%20Ave%2C%20Arvada%2C%20CO%2080005"
     },
     {
-      "id": 264,
+      "id": 267,
       "name": "Stratton Golf Course",
       "city": "Stratton",
       "region": "Front Range North",
@@ -4496,7 +4547,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=First%20%26%20Wyoming%2C%20Stratton%2C%20CO%2080836"
     },
     {
-      "id": 265,
+      "id": 268,
       "name": "Sumo Golf Village, The",
       "city": "Florence",
       "region": "Front Range South",
@@ -4513,7 +4564,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=5201%20Gary%20Player%20Dr%2C%20Florence%2C%20CO%2081226"
     },
     {
-      "id": 266,
+      "id": 269,
       "name": "Sunset Golf Course",
       "city": "Longmont",
       "region": "Front Range North",
@@ -4530,7 +4581,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1900%20Longs%20Peak%20Ave%2C%20Longmont%2C%20CO%2080501"
     },
     {
-      "id": 267,
+      "id": 270,
       "name": "Tamarack Golf Course",
       "city": "Limon",
       "region": "Front Range North",
@@ -4547,7 +4598,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=50771%20State%20Road%2071%2C%20Limon%2C%20CO%2080828"
     },
     {
-      "id": 268,
+      "id": 271,
       "name": "Telluride Ski & Golf Club",
       "city": "Telluride",
       "region": "West Slope",
@@ -4564,7 +4615,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=565%20Mountain%20Village%20Blvd%2C%20Telluride%2C%20CO%2081435%20%E2%80%8B"
     },
     {
-      "id": 269,
+      "id": 272,
       "name": "Thorncreek Golf Club",
       "city": "Thornton",
       "region": "Denver Area",
@@ -4581,7 +4632,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13555%20Washington%20St%2C%20Thornton%2C%20CO%2080241"
     },
     {
-      "id": 270,
+      "id": 273,
       "name": "Tiara Rado Golf Course",
       "city": "Grand Junction",
       "region": "West Slope",
@@ -4598,7 +4649,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2057%20S%20Broadway%2C%20Grand%20Junction%2C%20CO%2081507"
     },
     {
-      "id": 271,
+      "id": 274,
       "name": "Todd Creek Golf Club",
       "city": "Thornton",
       "region": "Denver Area",
@@ -4615,7 +4666,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8455%20Heritage%20Dr%2C%20Thornton%2C%20CO%2080602"
     },
     {
-      "id": 272,
+      "id": 275,
       "name": "TPC Colorado",
       "city": "Berthoud",
       "region": "Front Range North",
@@ -4632,7 +4683,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2375%20TPC%20Parkway%2C%20Berthoud%2C%20CO%2080513"
     },
     {
-      "id": 273,
+      "id": 276,
       "name": "Trinidad Golf Course",
       "city": "Trinidad",
       "region": "Front Range South",
@@ -4649,7 +4700,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1415%20Franklin%20D%20Azar%20Dr%2C%20Trinidad%2C%20CO%2081082"
     },
     {
-      "id": 274,
+      "id": 277,
       "name": "Twin Peaks Golf Course",
       "city": "Longmont",
       "region": "Front Range North",
@@ -4666,7 +4717,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1200%20Cornell%20Dr%2C%20Longmont%2C%20CO%2080503"
     },
     {
-      "id": 275,
+      "id": 278,
       "name": "Unaweep Canyon Golf Course",
       "city": "Whitewater",
       "region": "West Slope",
@@ -4683,7 +4734,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=CO-141%2C%20Grand%20Junction%2C%20CO%2081503"
     },
     {
-      "id": 276,
+      "id": 279,
       "name": "Ute Creek",
       "city": "Longmont",
       "region": "Denver Area",
@@ -4700,7 +4751,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2000%20Ute%20Creek%20Dr%2C%20Longmont%2C%20CO%2080504"
     },
     {
-      "id": 277,
+      "id": 280,
       "name": "Vail Golf Club",
       "city": "Vail",
       "region": "Mountain Area",
@@ -4717,7 +4768,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1775%20Sunburst%20Dr%2C%20Vail%2C%20CO%2081657"
     },
     {
-      "id": 278,
+      "id": 281,
       "name": "Valley Country Club",
       "city": "Centennial",
       "region": "Denver Area",
@@ -4728,13 +4779,13 @@
       "played": true,
       "order": 57,
       "first_played": "2023-10-02",
-      "video_url": null,
-      "has_video": false,
+      "video_url": "https://www.instagram.com/reel/DX9SWKRBwEx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "has_video": true,
       "apple_maps": "https://maps.apple.com/?q=14601%20Country%20Club%20Dr%2C%20Centennial%2C%20CO%2080016",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=14601%20Country%20Club%20Dr%2C%20Centennial%2C%20CO%2080016"
     },
     {
-      "id": 279,
+      "id": 282,
       "name": "Valley Hi Golf Course",
       "city": "Colorado Springs",
       "region": "Front Range South",
@@ -4751,7 +4802,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=610%20S%20Chelton%20Rd%2C%20Colorado%20Springs%2C%20CO%2080910"
     },
     {
-      "id": 280,
+      "id": 283,
       "name": "Walking Stick Golf Course",
       "city": "Pueblo",
       "region": "Front Range South",
@@ -4768,7 +4819,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4301%20Walking%20Stick%20Blvd%2C%20Pueblo%2C%20CO%2081001"
     },
     {
-      "id": 281,
+      "id": 284,
       "name": "Walnut Creek Golf Preserve",
       "city": "Westminster",
       "region": "Denver Area",
@@ -4785,7 +4836,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10555%20Westmoor%20Dr%2C%20Westminster%2C%20CO%2080021"
     },
     {
-      "id": 282,
+      "id": 285,
       "name": "Walsenburg Golf Course",
       "city": "Walsenburg",
       "region": "Front Range South",
@@ -4802,7 +4853,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1399%20Co%20Rd%20502%2C%20Walsenburg%2C%20CO%2081089"
     },
     {
-      "id": 283,
+      "id": 286,
       "name": "Washington County Golf Club",
       "city": "Akron",
       "region": "Front Range North",
@@ -4819,7 +4870,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=39469%20Hwy%2063%2C%20Akron%2C%20CO%2080720"
     },
     {
-      "id": 284,
+      "id": 287,
       "name": "Wellshire Golf Course",
       "city": "Denver",
       "region": "Denver Area",
@@ -4836,7 +4887,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3900%20E%20Dartmouth%20Ave%2C%20Denver%2C%20CO%2080210"
     },
     {
-      "id": 285,
+      "id": 288,
       "name": "West Woods Golf Club Cottonwood",
       "city": "Arvada",
       "region": "Denver Area",
@@ -4853,7 +4904,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6655%20Quaker%20St%2C%20Arvada%2C%20CO%2080007"
     },
     {
-      "id": 286,
+      "id": 289,
       "name": "West Woods Golf Club Silo",
       "city": "Arvada",
       "region": "Denver Area",
@@ -4870,7 +4921,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6655%20Quaker%20St%2C%20Arvada%2C%20CO%2080007"
     },
     {
-      "id": 287,
+      "id": 290,
       "name": "West Woods Golf Club Sleeping Indian",
       "city": "Arvada",
       "region": "Denver Area",
@@ -4887,7 +4938,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6655%20Quaker%20St%2C%20Arvada%2C%20CO%2080007"
     },
     {
-      "id": 288,
+      "id": 291,
       "name": "Willis Case Golf Course",
       "city": "Denver",
       "region": "Denver Area",
@@ -4904,7 +4955,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4999%20Vrain%20St%2C%20Denver%2C%20CO%2080212"
     },
     {
-      "id": 289,
+      "id": 292,
       "name": "Willow Creek Golf Club at Eagle Vail",
       "city": "Avon",
       "region": "Mountain Area",
@@ -4921,7 +4972,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=538%20Eagle%20Rd%2C%20Avon%2C%20CO%2081620"
     },
     {
-      "id": 290,
+      "id": 293,
       "name": "Wind Walker Ranch",
       "city": "Steam Boat Springs",
       "region": "Mountain Area",
@@ -4938,7 +4989,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=18%20CO-131%2C%20Steamboat%20Springs%2C%20CO%2080487"
     },
     {
-      "id": 291,
+      "id": 294,
       "name": "Wray Golf Course/ Country Club",
       "city": "Wray",
       "region": "Front Range North",
@@ -4955,7 +5006,7 @@
       "google_maps": "https://www.google.com/maps/search/?api=1&query=500%204th%20St%2C%20Wray%2C%20CO%2080758"
     },
     {
-      "id": 292,
+      "id": 295,
       "name": "Yampa Valley Golf Club",
       "city": "Craig",
       "region": "Mountain Area",
