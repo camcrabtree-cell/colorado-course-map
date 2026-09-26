@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema_version": 2,
-    "generated_at": "2026-09-25T13:51:07.891043Z",
-    "generated_at_unix": 1790344267,
+    "generated_at": "2026-09-26T03:59:35.375029Z",
+    "generated_at_unix": 1790395175,
     "count": 298,
     "source_file": "co_courses.xlsx"
   },
@@ -22,9 +22,9 @@
       "video_url": "https://www.instagram.com/p/Dap0t3iBkak/",
       "has_video": true,
       "cost_level": null,
-      "accessibility_level": 4,
+      "accessibility_level": 5,
       "cam_ranking": 1,
-      "anecdote": "",
+      "anecdote": "This place is special. It’s a rough-and-rugged masterpiece. It’s hard to imagine a course that isn’t perfec being the best course in the state, but it is.\nThis course is really hard to get onto, but somehow I know a ton of people who have played here.",
       "apple_maps": "https://maps.apple.com/?q=One%20Ballyneal%20Lane%2C%20Holyoke%2C%20CO%2080734",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=One%20Ballyneal%20Lane%2C%20Holyoke%2C%20CO%2080734"
     },
@@ -45,7 +45,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 135,
-      "anecdote": "",
+      "anecdote": "I don’t know why I love this place so much, but every time I play here, it’s just fun. Maybe I just love any par 3 that doesn’t require me to carry anything above a wedge.\nPlus, it’s BYOB. Like, for real. They encourage it.",
       "apple_maps": "https://maps.apple.com/?q=660%20E.%20Iliff%20Ave%2C%20Denver%2C%20CO%2080210",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=660%20E.%20Iliff%20Ave%2C%20Denver%2C%20CO%2080210"
     },
@@ -66,7 +66,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 109,
-      "anecdote": "",
+      "anecdote": "I was the interim head pro here for a few months. I heard Bill Murray has a house on this course. That’s pretty much all there is to say about this course.",
       "apple_maps": "https://maps.apple.com/?q=4999%20Vrain%20St%2C%20Denver%2C%20CO%2080212",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4999%20Vrain%20St%2C%20Denver%2C%20CO%2080212"
     },
@@ -87,7 +87,7 @@
       "cost_level": null,
       "accessibility_level": 6,
       "cam_ranking": 2,
-      "anecdote": "",
+      "anecdote": "You just have to watch the video. This place is insane. It’s basically a backyard course, and fewer than 200 people have ever played here. If you’re also trying to play every course in Colorado, this one may defeat you.",
       "apple_maps": "https://maps.apple.com/?q=19023%20CO-131%2C%20Bond%2C%20CO%2080423",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=19023%20CO-131%2C%20Bond%2C%20CO%2080423"
     },
@@ -108,7 +108,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": 3,
-      "anecdote": "",
+      "anecdote": "This place encapsulates Colorado golf, and that’s probably why it’s called Colorado Golf Club. It’s incredibly difficult, but fair, and absolutely pure. It’s also incredibly private, and you won’t meet a ton of people who have played it. If you ever get the chance, this is worth a last-minute sick day.",
       "apple_maps": "https://maps.apple.com/?q=8000%20Preservation%20Trail%2C%20Parker%2C%20CO%2080134",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8000%20Preservation%20Trail%2C%20Parker%2C%20CO%2080134"
     },
@@ -129,7 +129,7 @@
       "cost_level": 5,
       "accessibility_level": 2,
       "cam_ranking": 4,
-      "anecdote": "",
+      "anecdote": "This is the first golf course I ever worked at. I didn’t appreciate it then, but this place is one of the purest championship venues in Colorado. It’s technically public, but you have to play with a member or be a guest of the hotel.",
       "apple_maps": "https://maps.apple.com/?q=1%20Lake%20Avenue%2C%20Colorado%20Springs%2C%20CO%2080906",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1%20Lake%20Avenue%2C%20Colorado%20Springs%2C%20CO%2080906"
     },
@@ -150,7 +150,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": 5,
-      "anecdote": "",
+      "anecdote": "I played this one the day after the U.S. Am a few years back. It’s championship golf, and that’s the point. Incredibly pure, incredibly difficult, and incredibly hard to get an invite to play. Even as a pro, this is not an easy one to get on.",
       "apple_maps": "https://maps.apple.com/?q=4125%20S%20University%20Blvd%2C%20Cherry%20Hills%20Village%2C%20CO%2080113",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4125%20S%20University%20Blvd%2C%20Cherry%20Hills%20Village%2C%20CO%2080113"
     },
@@ -171,7 +171,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 6,
-      "anecdote": "",
+      "anecdote": "This is the finest course in Colorado, and by that, I mean it’s fine. It has a couple of cool holes, including one where you hit over a fence. I mostly reference this course as a joke when people ask what my favorite course is.",
       "apple_maps": "https://maps.apple.com/?q=14001%20W.%2032nd%20Ave%2C%20Golden%2C%20CO%2080401",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=14001%20W.%2032nd%20Ave%2C%20Golden%2C%20CO%2080401"
     },
@@ -192,7 +192,7 @@
       "cost_level": 5,
       "accessibility_level": 2,
       "cam_ranking": 6,
-      "anecdote": "",
+      "anecdote": "This place is going to change Colorado golf forever. And remember, a course isn’t overpriced if its tee sheet is full every day.",
       "apple_maps": "https://maps.apple.com/?q=34587%20I-76%20Frontage%20Rd%2C%20Roggen%2C%20CO%2080652",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=34587%20I-76%20Frontage%20Rd%2C%20Roggen%2C%20CO%2080652"
     },
@@ -213,7 +213,7 @@
       "cost_level": 5,
       "accessibility_level": 2,
       "cam_ranking": 7,
-      "anecdote": "",
+      "anecdote": "I’ve played this course virtually way too many times, and I’ve played it in person from almost every set of tees. I’ve never not loved it. This is the only TPC course I’ve played that I’ve actually loved. I think it’s only “public” Monday through Thursday, and it’s expensive.",
       "apple_maps": "https://maps.apple.com/?q=2375%20TPC%20Parkway%2C%20Berthoud%2C%20CO%2080513",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2375%20TPC%20Parkway%2C%20Berthoud%2C%20CO%2080513"
     },
@@ -234,7 +234,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 8,
-      "anecdote": "",
+      "anecdote": "This is one of the most slept-on courses in the state. It’s definitely private, but there are chances to play here. It’s just a damn good, beautiful golf course. Play it if you get the chance.",
       "apple_maps": "https://maps.apple.com/?q=15268%20Allen%20Ranch%20Road%2C%20Colorado%20Springs%2C%20CO%2080908",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=15268%20Allen%20Ranch%20Road%2C%20Colorado%20Springs%2C%20CO%2080908"
     },
@@ -255,7 +255,7 @@
       "cost_level": null,
       "accessibility_level": 4,
       "cam_ranking": 9,
-      "anecdote": "",
+      "anecdote": "One of only three Donald Ross courses in the state, and it has held up to the test of time. There aren’t many courses under 7,000 yards that will absolutely wreck you. Incredible golf course, but this one is a challenge to get onto. Call in sick if you get the invite.",
       "apple_maps": "https://maps.apple.com/?q=6800%20W%2010th%20Ave%2C%20Lakewood%2C%20CO%2080214",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6800%20W%2010th%20Ave%2C%20Lakewood%2C%20CO%2080214"
     },
@@ -276,7 +276,7 @@
       "cost_level": null,
       "accessibility_level": 4,
       "cam_ranking": 10,
-      "anecdote": "",
+      "anecdote": "This course is so good. Another Pete Dye creation, and it’s nearly on par with Cherry Hills. The level of privacy is pretty close too.",
       "apple_maps": "https://maps.apple.com/?q=110%20Glenmoor%20Drive%2C%20Cherry%20Hills%20Village%2C%20CO%2080113",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=110%20Glenmoor%20Drive%2C%20Cherry%20Hills%20Village%2C%20CO%2080113"
     },
@@ -297,7 +297,7 @@
       "cost_level": 5,
       "accessibility_level": 2,
       "cam_ranking": 11,
-      "anecdote": "",
+      "anecdote": "First course I ever worked at. I’d say if you play both courses from the tips, this course is way harder than the East Course. If you’re looking for views, this is the Broadmoor course to play. Best “mountain” course I’ve played.",
       "apple_maps": "https://maps.apple.com/?q=1%20Lake%20Avenue%2C%20Colorado%20Springs%2C%20CO%2080906",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1%20Lake%20Avenue%2C%20Colorado%20Springs%2C%20CO%2080906"
     },
@@ -316,9 +316,9 @@
       "video_url": "https://www.instagram.com/reel/DK4VHz2tmae/?utm_source=ig_web_copy_link&igsh=MXVpNnI1NzRpMm9nbA==",
       "has_video": true,
       "cost_level": null,
-      "accessibility_level": 4,
+      "accessibility_level": 3,
       "cam_ranking": 12,
-      "anecdote": "",
+      "anecdote": "I don’t like most Jack courses, but this place is so damn good. I’ll play here any chance I get. I’d be a member here if I could. I do see charity events here occasionally, so there are at least a few chances to get on",
       "apple_maps": "https://maps.apple.com/?q=2405%20S%20Yosemite%20St%2C%20Denver%2C%20CO%2080231",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2405%20S%20Yosemite%20St%2C%20Denver%2C%20CO%2080231"
     },
@@ -339,7 +339,7 @@
       "cost_level": null,
       "accessibility_level": 2,
       "cam_ranking": 13,
-      "anecdote": "",
+      "anecdote": "Ahh, a Pete Dye resort course. This place is great, challenging but fair, with two totally different nines. I believe you can stay at the hotel to play here, along with a few other reasonable ways to get onto this mostly private course.",
       "apple_maps": "https://maps.apple.com/?q=125%20Clubhouse%20Dr%2C%20Colorado%20Springs%2C%20CO%2080906",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=125%20Clubhouse%20Dr%2C%20Colorado%20Springs%2C%20CO%2080906"
     },
@@ -360,7 +360,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 14,
-      "anecdote": "",
+      "anecdote": "Owned by the founder of RE/MAX, basically just for him and charity events. Don’t tell me it’s the most private course in Colorado. It’s pricey, but there are a bajillion charity events you can play in to get onto this course.",
       "apple_maps": "https://maps.apple.com/?q=7549%20Daniels%20Park%20Rd%2C%20Sedalia%2C%20CO%2080135",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7549%20Daniels%20Park%20Rd%2C%20Sedalia%2C%20CO%2080135"
     },
@@ -381,7 +381,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": 15,
-      "anecdote": "",
+      "anecdote": "Denver Country Club is just cool. Old-school, right in the middle of the city, and way better than I expected the first time I played it. This is a nearly impossible one to get onto. The fact that I got to play it, film it, and do it fairly early in this whole journey is still kind of a surprise to me.",
       "apple_maps": "https://maps.apple.com/?q=1700%20E%201st%20Ave%2C%20Denver%2C%20CO%2080218",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1700%20E%201st%20Ave%2C%20Denver%2C%20CO%2080218"
     },
@@ -402,7 +402,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 16,
-      "anecdote": "",
+      "anecdote": "This place reminds me a lot of the East Course at The Broadmoor. I need to get out here again soon.",
       "apple_maps": "https://maps.apple.com/?q=15707%20W%2026th%20Ave%2C%20Golden%2C%20CO%2080401",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=15707%20W%2026th%20Ave%2C%20Golden%2C%20CO%2080401"
     },
@@ -423,7 +423,7 @@
       "cost_level": 4,
       "accessibility_level": 1,
       "cam_ranking": 17,
-      "anecdote": "",
+      "anecdote": "This is the only course where I’ve made two eagles in one round, and in a professional tournament at that. I freaking love this course. The steakhouse on property is also my favorite steakhouse in the state. This will likely be my only food recommendation",
       "apple_maps": "https://maps.apple.com/?q=1239%20Keystone%20Ranch%20Rd%2C%20Keystone%2C%20CO%2080435",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1239%20Keystone%20Ranch%20Rd%2C%20Keystone%2C%20CO%2080435"
     },
@@ -444,7 +444,7 @@
       "cost_level": 5,
       "accessibility_level": 2,
       "cam_ranking": 18,
-      "anecdote": "",
+      "anecdote": "Red Sky Fazio is just really damn good. It’s a little more polished and straightforward than the Norman course, but still feels like proper mountain golf without getting stupid. It’s private, but resort guests can get access, which makes it way more realistic to play than most clubs at this level.",
       "apple_maps": "https://maps.apple.com/?q=376%20Red%20Sky%20Rd%2C%20Wolcott%2C%20CO%2081655",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=376%20Red%20Sky%20Rd%2C%20Wolcott%2C%20CO%2081655"
     },
@@ -465,7 +465,7 @@
       "cost_level": 2,
       "accessibility_level": 1,
       "cam_ranking": 19,
-      "anecdote": "",
+      "anecdote": "The best golf deal in the state, the best public course on this side of the Rockies, and another Pete Dye. Such a good golf course. I’ll always play here if I get the chance.",
       "apple_maps": "https://maps.apple.com/?q=13300%20Riverdale%20Rd%2C%20Brighton%2C%20CO%2080602",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=13300%20Riverdale%20Rd%2C%20Brighton%2C%20CO%2080602"
     },
@@ -486,7 +486,7 @@
       "cost_level": 2,
       "accessibility_level": 1,
       "cam_ranking": 20,
-      "anecdote": "",
+      "anecdote": "I work here! This has always been, and will always be, one of my favorite courses. Designed by Tom Doak. Come play it, and take a caddie.",
       "apple_maps": "https://maps.apple.com/?q=10300%20E%20Golfers%20Way%2C%20Aurora%2C%20CO%2080010",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10300%20E%20Golfers%20Way%2C%20Aurora%2C%20CO%2080010"
     },
@@ -507,7 +507,7 @@
       "cost_level": 4,
       "accessibility_level": 1,
       "cam_ranking": 21,
-      "anecdote": "",
+      "anecdote": "The longest golf course in North America. If you play the right tees, this place is a lot of fun. I wouldn’t want to play it every day, but a couple of times a year is a must.",
       "apple_maps": "https://maps.apple.com/?q=1775%20RainDance%20National%20Dr%2C%20Windsor%2C%20CO%2080550",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1775%20RainDance%20National%20Dr%2C%20Windsor%2C%20CO%2080550"
     },
@@ -528,7 +528,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": 22,
-      "anecdote": "",
+      "anecdote": "This place is really hard, and it’s hosted a PGA Championship. Incredibly private, and there are very few chances you’ll ever get to play here, even as a pro.",
       "apple_maps": "https://maps.apple.com/?q=17%20Fairway%20Ln%2C%20Littleton%2C%20CO%2080123",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=17%20Fairway%20Ln%2C%20Littleton%2C%20CO%2080123"
     },
@@ -549,7 +549,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 23,
-      "anecdote": "",
+      "anecdote": "I keep saying I hate Jack courses, but this is another one that I love. It kind of feels like Walnut Creek, which is probably part of why I like it so much.",
       "apple_maps": "https://maps.apple.com/?q=9742%20S%20Meridian%20Blvd%2C%20Englewood%2C%20CO%2080112",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=9742%20S%20Meridian%20Blvd%2C%20Englewood%2C%20CO%2080112"
     },
@@ -570,7 +570,7 @@
       "cost_level": 3,
       "accessibility_level": 1,
       "cam_ranking": 24,
-      "anecdote": "",
+      "anecdote": "This place is a beast. Probably one of the best municipal courses in the state.",
       "apple_maps": "https://maps.apple.com/?q=10555%20Westmoor%20Dr%2C%20Westminster%2C%20CO%2080021",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10555%20Westmoor%20Dr%2C%20Westminster%2C%20CO%2080021"
     },
