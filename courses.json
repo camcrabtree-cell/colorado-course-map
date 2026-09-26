@@ -1,8 +1,8 @@
 {
   "meta": {
     "schema_version": 2,
-    "generated_at": "2026-09-26T03:59:35.375029Z",
-    "generated_at_unix": 1790395175,
+    "generated_at": "2026-09-26T04:30:55.340413Z",
+    "generated_at_unix": 1790397055,
     "count": 298,
     "source_file": "co_courses.xlsx"
   },
@@ -24,7 +24,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": 1,
-      "anecdote": "This place is special. It’s a rough-and-rugged masterpiece. It’s hard to imagine a course that isn’t perfec being the best course in the state, but it is.\nThis course is really hard to get onto, but somehow I know a ton of people who have played here.",
+      "anecdote": "This place is special. It’s a rough-and-rugged masterpiece. It’s hard to imagine a course that isn’t perfect being the best course in the state, but it is.\nThis course is really hard to get onto, but somehow I know a ton of people who have played here.",
       "apple_maps": "https://maps.apple.com/?q=One%20Ballyneal%20Lane%2C%20Holyoke%2C%20CO%2080734",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=One%20Ballyneal%20Lane%2C%20Holyoke%2C%20CO%2080734"
     },
@@ -906,7 +906,7 @@
       "cost_level": null,
       "accessibility_level": 4,
       "cam_ranking": 41,
-      "anecdote": "",
+      "anecdote": "This is not the BMW Championship course. This is the neighbor. Also designed by Jack, also very private, and I don’t really like it.",
       "apple_maps": "https://maps.apple.com/?q=6400%20Country%20Club%20Dr%2C%20Castle%20Rock%2C%20CO%2080108",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6400%20Country%20Club%20Dr%2C%20Castle%20Rock%2C%20CO%2080108"
     },
@@ -1074,7 +1074,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 49,
-      "anecdote": "",
+      "anecdote": "Basically a better Arrowhead. Do with that what you will.",
       "apple_maps": "https://maps.apple.com/?q=8285%20Dante%20Dr%2C%20Littleton%2C%20CO%2080125",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=8285%20Dante%20Dr%2C%20Littleton%2C%20CO%2080125"
     },
@@ -1248,7 +1248,7 @@
     },
     {
       "id": 60,
-      "name": "ClubCorp at Blackstone Country Club",
+      "name": "Blackstone Country Club",
       "city": "Aurora",
       "region": "Denver Area",
       "type": "Private",
@@ -1263,7 +1263,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 58,
-      "anecdote": "",
+      "anecdote": "This place kind of reminds me of Murphy Creek, just private. They have charity events here basically every Monday, so if you really want to play it, you probably can.",
       "apple_maps": "https://maps.apple.com/?q=7777%20S%20Country%20Club%20Pkwy%2C%20Aurora%2C%20CO%2080016",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=7777%20S%20Country%20Club%20Pkwy%2C%20Aurora%2C%20CO%2080016"
     },
@@ -1368,7 +1368,7 @@
       "cost_level": 5,
       "accessibility_level": 1,
       "cam_ranking": 63,
-      "anecdote": "",
+      "anecdote": "This is basically the Margaritaville of golf courses. Do with that what you will. It’s not subtle.",
       "apple_maps": "https://maps.apple.com/?q=10850%20W.%20Sundown%20Trail%2C%20Littleton%2C%20CO%2080125",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=10850%20W.%20Sundown%20Trail%2C%20Littleton%2C%20CO%2080125"
     },
@@ -1389,7 +1389,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 64,
-      "anecdote": "",
+      "anecdote": "Probably the most surprising course of this whole journey. I did not expect Pueblo Country Club to be this good, and I still think it has the best greens in Colorado.",
       "apple_maps": "https://maps.apple.com/?q=3200%208th%20Ave%2C%20Pueblo%2C%20CO%2081008",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3200%208th%20Ave%2C%20Pueblo%2C%20CO%2081008"
     },
@@ -1473,7 +1473,7 @@
       "cost_level": 2,
       "accessibility_level": 1,
       "cam_ranking": 68,
-      "anecdote": "",
+      "anecdote": "Probably the biggest hidden gem in Denver golf. It’s a Donald Ross, I’ve played this place a couple hundred times, and it was also my first big-boy job in golf. I’ll always have a soft spot for Wellshire.",
       "apple_maps": "https://maps.apple.com/?q=3900%20E%20Dartmouth%20Ave%2C%20Denver%2C%20CO%2080210",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=3900%20E%20Dartmouth%20Ave%2C%20Denver%2C%20CO%2080210"
     },
@@ -1977,7 +1977,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 92,
-      "anecdote": "",
+      "anecdote": "I passed my PAT here, so I’ll always have a soft spot for it. It’s also my favorite regulation course in Colorado under 6,500 yards. Yes, I know that’s very specific.",
       "apple_maps": "https://maps.apple.com/?q=222%20Clubhouse%20Dr%2C%20Fort%20Lupton%2C%20CO%2080621",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=222%20Clubhouse%20Dr%2C%20Fort%20Lupton%2C%20CO%2080621"
     },
@@ -2019,7 +2019,7 @@
       "cost_level": 2,
       "accessibility_level": 1,
       "cam_ranking": 94,
-      "anecdote": "",
+      "anecdote": "I’m not allowed to say anything bad about this course. Fortunately, I actually like it. It’s just very far away.",
       "apple_maps": "https://maps.apple.com/?q=42350%20County%20Rd%2017/21%2C%20Elizabeth%2C%20CO%2080107",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=42350%20County%20Rd%2017/21%2C%20Elizabeth%2C%20CO%2080107"
     },
@@ -2166,7 +2166,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 101,
-      "anecdote": "",
+      "anecdote": "This is a private par-3 course, which is only difficult to play because how the hell do you get onto a private par-3 course? That’s basically the whole challenge.",
       "apple_maps": "https://maps.apple.com/?q=1489%20E%20Easter%20Ave%2C%20Centennial%2C%20CO%2080122",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1489%20E%20Easter%20Ave%2C%20Centennial%2C%20CO%2080122"
     },
@@ -2313,7 +2313,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 108,
-      "anecdote": "",
+      "anecdote": "What the hell is this place? This course is chaos. I need to go back.",
       "apple_maps": "https://maps.apple.com/?q=2100%20Country%20Club%20Pkwy%2C%20Milliken%2C%20CO%2080543",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=2100%20Country%20Club%20Pkwy%2C%20Milliken%2C%20CO%2080543"
     },
@@ -2628,7 +2628,7 @@
       "cost_level": null,
       "accessibility_level": 3,
       "cam_ranking": 126,
-      "anecdote": "",
+      "anecdote": "It’s a golf course in Woodmoor. I’ve played it. Is Woodmoor a city, or is that just the name? Its private.",
       "apple_maps": "https://maps.apple.com/?q=18945%20Pebble%20Beach%20Way%2C%20Monument%2C%20CO%2080132",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=18945%20Pebble%20Beach%20Way%2C%20Monument%2C%20CO%2080132"
     },
@@ -2691,7 +2691,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 129,
-      "anecdote": "",
+      "anecdote": "This place was kind of my humble beginning in golf. I hustled lessons on the driving range, and on slow days, if I couldn’t get a tee time, I’d go DoorDash. I learned a lot here, played it dozens of times, and I’m probably good on ever playing it again. It’ll always mean something to me, even if the golf itself is pretty mid.",
       "apple_maps": "https://maps.apple.com/?q=610%20S%20Chelton%20Rd%2C%20Colorado%20Springs%2C%20CO%2080910",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=610%20S%20Chelton%20Rd%2C%20Colorado%20Springs%2C%20CO%2080910"
     },
@@ -2901,7 +2901,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 140,
-      "anecdote": "",
+      "anecdote": "I’m pretty open about the fact that I don’t like this place. People love it, I get why, and the setting is obviously cool. The actual golf just does absolutely nothing for me.",
       "apple_maps": "https://maps.apple.com/?q=29614%20Upper%20Bear%20Creek%20Rd%2C%20Evergreen%2C%20CO%2080439",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=29614%20Upper%20Bear%20Creek%20Rd%2C%20Evergreen%2C%20CO%2080439"
     },
@@ -3048,7 +3048,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 148,
-      "anecdote": "",
+      "anecdote": "Man, to be a broke 18-year-old in the Air Force again. Seven par 3s and two kind-of par 4s. I played a lot of golf here.",
       "apple_maps": "https://maps.apple.com/?q=6865%20Galley%20Rd%2C%20Colorado%20Springs%2C%20CO%2080915",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=6865%20Galley%20Rd%2C%20Colorado%20Springs%2C%20CO%2080915"
     },
@@ -3090,7 +3090,7 @@
       "cost_level": 1,
       "accessibility_level": 1,
       "cam_ranking": 150,
-      "anecdote": "",
+      "anecdote": "Sand greens, a cash box, no clubhouse, and most of the flags are falling over. After about three holes, you’ve probably seen enough. Somehow, still one of my favorite golf experiences in the state.",
       "apple_maps": "https://maps.apple.com/?q=44161%20County%20Highway%20109%2C%20Hugo%2C%20CO%2080821",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=44161%20County%20Highway%20109%2C%20Hugo%2C%20CO%2080821"
     },
@@ -3110,8 +3110,8 @@
       "has_video": true,
       "cost_level": 1,
       "accessibility_level": 1,
-      "cam_ranking": 151,
-      "anecdote": "",
+      "cam_ranking": 30,
+      "anecdote": "Like Hiwan, but better. This place is public, and it’s worth the drive.",
       "apple_maps": "https://maps.apple.com/?q=1700%20County%20Road%2067J%2C%20Red%20Feather%20Lakes%2C%20CO%2080545",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1700%20County%20Road%2067J%2C%20Red%20Feather%20Lakes%2C%20CO%2080545"
     },
@@ -3195,7 +3195,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": null,
-      "anecdote": "",
+      "anecdote": "If you have access to this place, email me at cam.crabtree@pga.com. I have questions.",
       "apple_maps": "https://maps.apple.com/?q=1900%20Kedron%20Cir%2C%20Fort%20Collins%2C%20CO%2080524",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1900%20Kedron%20Cir%2C%20Fort%20Collins%2C%20CO%2080524"
     },
@@ -3447,7 +3447,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": null,
-      "anecdote": "",
+      "anecdote": "If you can get me onto Castle Pines GC, email me at cam.crabtree@pga.com. I am serious.",
       "apple_maps": "https://maps.apple.com/?q=1000%20Hummingbird%20Dr%2C%20Castle%20Rock%2C%20CO%2080108",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=1000%20Hummingbird%20Dr%2C%20Castle%20Rock%2C%20CO%2080108"
     },
@@ -3573,7 +3573,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": null,
-      "anecdote": "",
+      "anecdote": "How is getting onto the Cherry Hills par-3 course somehow a harder request than getting onto the main course? If you can get me on, email me at cam.crabtree@pga.com.",
       "apple_maps": "https://maps.apple.com/?q=4125%20S%20University%20Blvd%2C%20Cherry%20Hills%20Village%2C%20CO%2080113",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=4125%20S%20University%20Blvd%2C%20Cherry%20Hills%20Village%2C%20CO%2080113"
     },
@@ -3804,7 +3804,7 @@
       "cost_level": null,
       "accessibility_level": 4,
       "cam_ranking": null,
-      "anecdote": "",
+      "anecdote": "They already told me no, and I’m not trying to trespass. If you can get me onto the Cordillera short course, email me at cam.crabtree@pga.com.",
       "apple_maps": "https://maps.apple.com/?q=100%20Kensington%20Dr%2C%20Edwards%2C%20CO%2081632",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=100%20Kensington%20Dr%2C%20Edwards%2C%20CO%2081632"
     },
@@ -4035,7 +4035,7 @@
       "cost_level": null,
       "accessibility_level": 5,
       "cam_ranking": null,
-      "anecdote": "",
+      "anecdote": "I still need to get onto Eagle Springs. If you have a connection, email me at cam.crabtree@pga.com. I’m running out of normal ways to ask.",
       "apple_maps": "https://maps.apple.com/?q=28521%20US-6%2C%20Wolcott%2C%20CO%2081655",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=28521%20US-6%2C%20Wolcott%2C%20CO%2081655"
     },
@@ -4048,9 +4048,9 @@
       "address": "1200 Clubhouse Dr, Broomfield, CO 80020",
       "lat": 39.9335,
       "lng": -105.0681,
-      "played": false,
-      "order": null,
-      "first_played": null,
+      "played": true,
+      "order": 152,
+      "first_played": "2026-09-21",
       "video_url": null,
       "has_video": false,
       "cost_level": 1,
@@ -5967,7 +5967,7 @@
       "cost_level": null,
       "accessibility_level": 4,
       "cam_ranking": null,
-      "anecdote": "",
+      "anecdote": "This is one of the weird ones. Private pasture golf, windmills, and basically its own version of the game. If you can get me on, email me at cam.crabtree@pga.com.",
       "apple_maps": "https://maps.apple.com/?q=184%20County%20Road%20130%2C%20Westcliffe%2C%20CO%2081252",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=184%20County%20Road%20130%2C%20Westcliffe%2C%20CO%2081252"
     },
@@ -6156,7 +6156,7 @@
       "cost_level": null,
       "accessibility_level": 6,
       "cam_ranking": null,
-      "anecdote": "",
+      "anecdote": "Westlands Ranch is still on the list. I don’t even need to film it, I just need to play it so I can mark it off. If you can get me on, email me at cam.crabtree@pga.com.",
       "apple_maps": "https://maps.apple.com/?q=22110%20County%20Road%208%2C%20Meeker%2C%20CO%2081641",
       "google_maps": "https://www.google.com/maps/search/?api=1&query=22110%20County%20Road%208%2C%20Meeker%2C%20CO%2081641"
     },
